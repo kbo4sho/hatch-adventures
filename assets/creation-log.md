@@ -29,3 +29,9 @@ Assets are created automatically every 4 hours during waking hours:
 **File:** `01-image-prompts.md`  
 **Description:** 8 detailed AI image generation prompts for key scenes + 4 optional variations. Includes cover image, hatch discovery, golden tunnel, dinosaur garden views, meeting the Brachiosaurus, picnic scene, playing with babies, waterfall hatch exit, and gift moment. Ready for Midjourney/DALL-E/Stable Diffusion.  
 **Status:** ✅ Complete
+
+### 2026-01-31 09:00 CST
+**Type:** HTML/JS Interactive Mini-Game  
+**File:** `02-feed-the-dinosaurs-game.html`  
+**Description:** Drag-and-drop game where kids match food to dinosaurs (leaves→Brachiosaurus, flowers→Triceratops, berries→Stegosaurus). Features touch support for tablets/phones, colorful animations, celebration effects, sound feedback, and score tracking. Fully functional, kid-friendly interface for ages 3-7. Works offline as standalone HTML file.  
+**Status:** ✅ Complete

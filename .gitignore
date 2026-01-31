@@ -1,0 +1,5 @@
+# Build outputs
+automation/output/
+*.mp3
+*.aiff
+.DS_Store

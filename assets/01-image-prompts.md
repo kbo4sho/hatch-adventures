@@ -10,7 +10,8 @@ These prompts are designed for AI image generators (Midjourney, DALL-E, Stable D
 - Carries a sense of wonder and protective energy
 
 **Mia (3 years old, girl)**
-- Colorful dress or overalls, pigtails
+- Blonde hair in pigtails
+- Colorful dress or overalls
 - Holds "Flop" (stuffed bunny)
 - Wide-eyed, giggly, fearless expression
 
@@ -20,7 +21,7 @@ These prompts are designed for AI image generators (Midjourney, DALL-E, Stable D
 
 **Prompt:**
 ```
-Children's book illustration, warm and inviting style. A 7-year-old boy (Max) in a blue hoodie and a 3-year-old girl (Mia) with pigtails standing in front of a giant friendly Brachiosaurus in a lush prehistoric garden. The dinosaur is gentle and smiling. Background shows enormous ferns, colorful giant flowers, and an orange sky. Soft watercolor style with bold outlines, kid-friendly, bright and cheerful colors, safe and magical atmosphere. Wide angle composition. In the style of modern children's picture books.
+Children's book illustration, warm and inviting style. A 7-year-old boy (Max) in a blue hoodie and a 3-year-old girl (Mia) with blonde pigtails standing in front of a giant friendly Brachiosaurus in a lush prehistoric garden. The dinosaur is gentle and smiling. Background shows enormous ferns, colorful giant flowers, and an orange sky. Soft watercolor style with bold outlines, kid-friendly, bright and cheerful colors, safe and magical atmosphere. Wide angle composition. In the style of modern children's picture books.
 ```
 
 **Style tags:** `children's book illustration, watercolor, friendly, safe, bright colors, wide angle`
@@ -31,7 +32,7 @@ Children's book illustration, warm and inviting style. A 7-year-old boy (Max) in
 
 **Prompt:**
 ```
-Children's book illustration. Close-up view of a mysterious round metal hatch built into the ground beneath an old oak tree. The hatch has intricate swirling patterns that glow soft blue. A star-shaped handle in the center. Tree roots surround it. A 7-year-old boy in a blue hoodie (Max) kneeling beside it with wonder in his eyes, and a 3-year-old girl with pigtails (Mia) peeking over his shoulder. A stuffed bunny lies nearby. Warm afternoon sunlight filtering through leaves. Magical and inviting atmosphere. Watercolor style with clean lines.
+Children's book illustration. Close-up view of a mysterious round metal hatch built into the ground beneath an old oak tree. The hatch has intricate swirling patterns that glow soft blue. A star-shaped handle in the center. Tree roots surround it. A 7-year-old boy in a blue hoodie (Max) kneeling beside it with wonder in his eyes, and a 3-year-old girl with blonde pigtails (Mia) peeking over his shoulder. A stuffed bunny lies nearby. Warm afternoon sunlight filtering through leaves. Magical and inviting atmosphere. Watercolor style with clean lines.
 ```
 
 **Style tags:** `children's illustration, discovery moment, magical realism, warm lighting, detailed hatch design`
@@ -42,7 +43,7 @@ Children's book illustration. Close-up view of a mysterious round metal hatch bu
 
 **Prompt:**
 ```
-Children's book illustration showing two children sliding through a magical tunnel. A 7-year-old boy (Max) in blue hoodie holding the hand of a 3-year-old girl (Mia) with pigtails as they slide/fly through a swirling tunnel of warm golden light. The tunnel curves and spirals. Light particles and sparkles surround them. Both children have expressions of joy and excitement. Motion lines suggest speed. Dreamy, fantastical atmosphere. Soft watercolor style with glowing effects. View from the side showing the full tunnel curve.
+Children's book illustration showing two children sliding through a magical tunnel. A 7-year-old boy (Max) in blue hoodie holding the hand of a 3-year-old girl (Mia) with blonde pigtails as they slide/fly through a swirling tunnel of warm golden light. The tunnel curves and spirals. Light particles and sparkles surround them. Both children have expressions of joy and excitement. Motion lines suggest speed. Dreamy, fantastical atmosphere. Soft watercolor style with glowing effects. View from the side showing the full tunnel curve.
 ```
 
 **Style tags:** `motion, fantasy tunnel, golden light, magical, joyful, dynamic composition`
@@ -53,7 +54,7 @@ Children's book illustration showing two children sliding through a magical tunn
 
 **Prompt:**
 ```
-Children's book illustration, wide establishing shot. Two small children (Max in blue hoodie, Mia with pigtails) standing on soft green moss in the foreground, viewed from behind, looking up at an enormous prehistoric jungle garden. Trees as tall as skyscrapers, giant ferns, massive colorful flowers (red, purple, yellow) the size of beach balls. Orange sky visible through the canopy. Sense of scale emphasizing how small the children are. Lush, vibrant, safe and welcoming atmosphere despite the scale. Watercolor style with rich greens and warm tones.
+Children's book illustration, wide establishing shot. Two small children (Max in blue hoodie, Mia with blonde pigtails) standing on soft green moss in the foreground, viewed from behind, looking up at an enormous prehistoric jungle garden. Trees as tall as skyscrapers, giant ferns, massive colorful flowers (red, purple, yellow) the size of beach balls. Orange sky visible through the canopy. Sense of scale emphasizing how small the children are. Lush, vibrant, safe and welcoming atmosphere despite the scale. Watercolor style with rich greens and warm tones.
 ```
 
 **Style tags:** `establishing shot, sense of scale, lush vegetation, orange sky, wonder and awe, safe adventure`
@@ -86,7 +87,7 @@ Children's book illustration, wide scene. A dinosaur picnic in a prehistoric gar
 
 **Prompt:**
 ```
-Children's book illustration. Close-up playful scene. Mia (3-year-old girl with pigtails) laughing and playing hide-and-seek with three adorable baby dinosaurs (small, round, friendly faces). One baby dinosaur peeking from behind a giant fern, another nuzzling Mia's hand, the third playing tag. Max (7, blue hoodie) in the background petting a Triceratops. Soft afternoon light filtering through jungle canopy. Expressions of pure joy and friendship. Watercolor style with soft edges and bright, cheerful colors.
+Children's book illustration. Close-up playful scene. Mia (3-year-old girl with blonde pigtails) laughing and playing hide-and-seek with three adorable baby dinosaurs (small, round, friendly faces). One baby dinosaur peeking from behind a giant fern, another nuzzling Mia's hand, the third playing tag. Max (7, blue hoodie) in the background petting a Triceratops. Soft afternoon light filtering through jungle canopy. Expressions of pure joy and friendship. Watercolor style with soft edges and bright, cheerful colors.
 ```
 
 **Style tags:** `playful moment, baby dinosaurs, friendship, joy, hide and seek, intimate scene, child-dinosaur bonding`

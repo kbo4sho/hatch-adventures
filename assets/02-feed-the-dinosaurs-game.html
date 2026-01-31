@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed the Dinosaurs! - The Hatch Adventures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(135deg, #ffa07a 0%, #ff7f50 50%, #ff6347 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        
+        .game-container {
+            background: white;
+            border-radius: 30px;
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #2d5016;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        .score {
+            text-align: center;
+            font-size: 1.8em;
+            color: #ff6347;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .dinosaurs {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .dinosaur {
+            background: linear-gradient(135deg, #c8e6c9 0%, #a5d6a7 100%);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            min-width: 180px;
+            flex: 1;
+            border: 4px dashed transparent;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .dinosaur:hover {
+            transform: scale(1.05);
+        }
+        
+        .dinosaur.drag-over {
+            border-color: #4caf50;
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            transform: scale(1.1);
+        }
+        
+        .dinosaur.correct {
+            animation: celebrate 0.5s ease;
+            background: linear-gradient(135deg, #fff59d 0%, #ffeb3b 100%);
+        }
+        
+        @keyframes celebrate {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.2) rotate(-5deg); }
+            75% { transform: scale(1.2) rotate(5deg); }
+        }
+        
+        .dino-emoji {
+            font-size: 4em;
+            margin-bottom: 10px;
+            display: block;
+        }
+        
+        .dino-name {
+            font-size: 1.3em;
+            color: #2d5016;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .dino-wants {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+        
+        .foods {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            padding: 20px;
+            background: rgba(255,255,255,0.5);
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .food {
+            cursor: move;
+            cursor: grab;
+            transition: transform 0.2s ease;
+            touch-action: none;
+        }
+        
+        .food:active {
+            cursor: grabbing;
+        }
+        
+        .food:hover {
+            transform: scale(1.1);
+        }
+        
+        .food.dragging {
+            opacity: 0.5;
+            transform: scale(1.2);
+        }
+        
+        .food-item {
+            font-size: 3em;
+            background: white;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 3px solid #ff9800;
+        }
+        
+        .reset-btn {
+            display: block;
+            margin: 20px auto 0;
+            padding: 15px 40px;
+            font-size: 1.3em;
+            background: linear-gradient(135deg, #ff6b6b 0%, #ee5a6f 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-family: inherit;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.2s ease;
+        }
+        
+        .reset-btn:hover {
+            transform: scale(1.05);
+        }
+        
+        .reset-btn:active {
+            transform: scale(0.95);
+        }
+        
+        .instructions {
+            text-align: center;
+            color: #555;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .completion {
+            text-align: center;
+            font-size: 2em;
+            color: #4caf50;
+            margin-top: 20px;
+            font-weight: bold;
+            display: none;
+            animation: bounce 1s ease infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .dino-emoji { font-size: 3em; }
+            .food-item { width: 60px; height: 60px; font-size: 2.5em; }
+            .dinosaur { min-width: 140px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🦕 Feed the Dinosaurs! 🦖</h1>
+        <p class="subtitle">From "The Dinosaur Garden" - The Hatch Adventures</p>
+        <p class="instructions">Drag each food to the dinosaur who wants it!</p>
+        
+        <div class="score">Score: <span id="score">0</span>/3</div>
+        
+        <div class="dinosaurs" id="dinosaurs">
+            <div class="dinosaur" data-wants="🌿" data-name="brachio">
+                <span class="dino-emoji">🦕</span>
+                <div class="dino-name">Brachiosaurus</div>
+                <div class="dino-wants">Wants: Leaves</div>
+            </div>
+            <div class="dinosaur" data-wants="🌸" data-name="trike">
+                <span class="dino-emoji">🦖</span>
+                <div class="dino-name">Triceratops</div>
+                <div class="dino-wants">Wants: Flowers</div>
+            </div>
+            <div class="dinosaur" data-wants="🍇" data-name="stego">
+                <span class="dino-emoji">🦴</span>
+                <div class="dino-name">Stegosaurus</div>
+                <div class="dino-wants">Wants: Berries</div>
+            </div>
+        </div>
+        
+        <div class="foods" id="foods">
+            <div class="food" draggable="true" data-food="🌿">
+                <div class="food-item">🌿</div>
+            </div>
+            <div class="food" draggable="true" data-food="🌸">
+                <div class="food-item">🌸</div>
+            </div>
+            <div class="food" draggable="true" data-food="🍇">
+                <div class="food-item">🍇</div>
+            </div>
+        </div>
+        
+        <div class="completion" id="completion">
+            🎉 Yay! All dinosaurs are happy! 🎉
+        </div>
+        
+        <button class="reset-btn" onclick="resetGame()">Play Again!</button>
+    </div>
+
+    <script>
+        let score = 0;
+        let fedDinos = new Set();
+        
+        const foods = document.querySelectorAll('.food');
+        const dinosaurs = document.querySelectorAll('.dinosaur');
+        const scoreDisplay = document.getElementById('score');
+        const completion = document.getElementById('completion');
+        
+        // Desktop drag and drop
+        foods.forEach(food => {
+            food.addEventListener('dragstart', dragStart);
+            food.addEventListener('dragend', dragEnd);
+        });
+        
+        dinosaurs.forEach(dino => {
+            dino.addEventListener('dragover', dragOver);
+            dino.addEventListener('dragleave', dragLeave);
+            dino.addEventListener('drop', drop);
+        });
+        
+        // Touch support
+        foods.forEach(food => {
+            food.addEventListener('touchstart', touchStart, {passive: false});
+            food.addEventListener('touchmove', touchMove, {passive: false});
+            food.addEventListener('touchend', touchEnd, {passive: false});
+        });
+        
+        let draggedElement = null;
+        let touchClone = null;
+        
+        function dragStart(e) {
+            draggedElement = this;
+            this.classList.add('dragging');
+            e.dataTransfer.effectAllowed = 'move';
+        }
+        
+        function dragEnd() {
+            this.classList.remove('dragging');
+        }
+        
+        function dragOver(e) {
+            e.preventDefault();
+            this.classList.add('drag-over');
+            e.dataTransfer.dropEffect = 'move';
+        }
+        
+        function dragLeave() {
+            this.classList.remove('drag-over');
+        }
+        
+        function drop(e) {
+            e.preventDefault();
+            this.classList.remove('drag-over');
+            
+            if (!draggedElement) return;
+            
+            const foodType = draggedElement.getAttribute('data-food');
+            const wantedFood = this.getAttribute('data-wants');
+            const dinoName = this.getAttribute('data-name');
+            
+            if (foodType === wantedFood && !fedDinos.has(dinoName)) {
+                // Correct match!
+                this.classList.add('correct');
+                draggedElement.style.display = 'none';
+                fedDinos.add(dinoName);
+                score++;
+                scoreDisplay.textContent = score;
+                
+                // Play sound effect (optional)
+                playSuccessSound();
+                
+                // Check if all fed
+                if (score === 3) {
+                    setTimeout(() => {
+                        completion.style.display = 'block';
+                    }, 500);
+                }
+            }
+        }
+        
+        // Touch handlers
+        function touchStart(e) {
+            e.preventDefault();
+            draggedElement = this;
+            this.classList.add('dragging');
+            
+            // Create a visual clone for dragging
+            touchClone = this.cloneNode(true);
+            touchClone.style.position = 'fixed';
+            touchClone.style.pointerEvents = 'none';
+            touchClone.style.zIndex = '1000';
+            touchClone.style.opacity = '0.8';
+            document.body.appendChild(touchClone);
+            
+            const touch = e.touches[0];
+            updateTouchClone(touch.clientX, touch.clientY);
+        }
+        
+        function touchMove(e) {
+            e.preventDefault();
+            if (!touchClone) return;
+            
+            const touch = e.touches[0];
+            updateTouchClone(touch.clientX, touch.clientY);
+        }
+        
+        function touchEnd(e) {
+            e.preventDefault();
+            if (!draggedElement) return;
+            
+            draggedElement.classList.remove('dragging');
+            
+            if (touchClone) {
+                document.body.removeChild(touchClone);
+                touchClone = null;
+            }
+            
+            const touch = e.changedTouches[0];
+            const dropTarget = document.elementFromPoint(touch.clientX, touch.clientY);
+            
+            // Find the dinosaur element
+            let dinoElement = dropTarget;
+            while (dinoElement && !dinoElement.classList.contains('dinosaur')) {
+                dinoElement = dinoElement.parentElement;
+            }
+            
+            if (dinoElement && dinoElement.classList.contains('dinosaur')) {
+                const foodType = draggedElement.getAttribute('data-food');
+                const wantedFood = dinoElement.getAttribute('data-wants');
+                const dinoName = dinoElement.getAttribute('data-name');
+                
+                if (foodType === wantedFood && !fedDinos.has(dinoName)) {
+                    dinoElement.classList.add('correct');
+                    draggedElement.style.display = 'none';
+                    fedDinos.add(dinoName);
+                    score++;
+                    scoreDisplay.textContent = score;
+                    playSuccessSound();
+                    
+                    if (score === 3) {
+                        setTimeout(() => {
+                            completion.style.display = 'block';
+                        }, 500);
+                    }
+                }
+            }
+            
+            draggedElement = null;
+        }
+        
+        function updateTouchClone(x, y) {
+            if (!touchClone) return;
+            touchClone.style.left = (x - 40) + 'px';
+            touchClone.style.top = (y - 40) + 'px';
+        }
+        
+        function playSuccessSound() {
+            // Simple success feedback with audio context
+            try {
+                const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.value = 523.25; // C5
+                oscillator.type = 'sine';
+                
+                gainNode.gain.setValueAtTime(0.3, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+                
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + 0.3);
+            } catch (e) {
+                // Audio not supported, no problem
+            }
+        }
+        
+        function resetGame() {
+            score = 0;
+            fedDinos.clear();
+            scoreDisplay.textContent = '0';
+            completion.style.display = 'none';
+            
+            dinosaurs.forEach(dino => {
+                dino.classList.remove('correct');
+            });
+            
+            foods.forEach(food => {
+                food.style.display = 'flex';
+                food.classList.remove('dragging');
+            });
+        }
+    </script>
+</body>
+</html>

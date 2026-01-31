@@ -13,6 +13,7 @@ Two siblings—**Max** (7) and **Mia** (3)—discover magical hatches that trans
 - Wears: blue hoodie, sneakers with lights
 
 ### Mia (3 years old, girl)
+- Blonde hair in pigtails
 - Imaginative, fearless, giggly
 - Loves animals, colors, and singing
 - Calls Max "Maxy"

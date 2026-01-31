@@ -76,7 +76,7 @@ Every story teaches something:
 
 ### Character Design
 - **Max:** Blue hoodie, sneakers with lights, messy brown hair, curious expression
-- **Mia:** Colorful dress/overalls, pigtails, carries "Flop" (stuffed bunny)
+- **Mia:** Blonde hair in pigtails, colorful dress/overalls, carries "Flop" (stuffed bunny)
 - Both have expressive faces (easy to animate)
 
 ### Settings
