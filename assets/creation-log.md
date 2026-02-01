@@ -35,3 +35,15 @@ Assets are created automatically every 4 hours during waking hours:
 **File:** `02-feed-the-dinosaurs-game.html`  
 **Description:** Drag-and-drop game where kids match food to dinosaurs (leaves→Brachiosaurus, flowers→Triceratops, berries→Stegosaurus). Features touch support for tablets/phones, colorful animations, celebration effects, sound feedback, and score tracking. Fully functional, kid-friendly interface for ages 3-7. Works offline as standalone HTML file.  
 **Status:** ✅ Complete
+
+### 2026-01-31 13:00 CST
+**Type:** Printable Coloring Page (SVG)  
+**File:** `03-dinosaur-garden-coloring-page.svg`  
+**Description:** Full-page coloring scene featuring Max and Mia meeting the friendly Brachiosaurus in the dinosaur garden. Includes: Max waving at the dino, Mia reaching out with joy, a kind Brachiosaurus with spots, baby dinosaur, giant ferns and flowers, berry pile from the picnic, the glowing hatch, hearts showing friendship, sun and stars. Bold, clear outlines perfect for ages 3-7. Print-ready at 8x10 inches. Can be opened directly in browsers or imported into coloring apps.  
+**Status:** ✅ Complete
+
+### 2026-01-31 17:00 CST
+**Type:** Activity Worksheet (Interactive HTML)  
+**File:** `04-activity-worksheet.html`  
+**Description:** Interactive multi-activity worksheet with 4 engaging games: (1) Clickable maze to help Max & Mia find the hatch, (2) Word search with 8 dinosaur-themed words (MAX, MIA, HATCH, DINO, GARDEN, BERRY, LEAF, FLOP), (3) Drag-to-match dinosaurs with their favorite foods, (4) Counting activity with dinosaurs, flowers, and hatches. Features colorful UI, success animations, reset buttons, and full print compatibility. Works standalone offline. Perfect for ages 3-7 with parental support.  
+**Status:** ✅ Complete

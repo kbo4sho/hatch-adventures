@@ -112,7 +112,7 @@
 27. **The Balloon Animal Zoo**  
    *Setting:* Zoo where animals are made of balloons  
 
-28. **The Cozy Cocoa Café**  
+28. **The Cozy Chocolate Café**  
    *Setting:* Warm café that serves the world's best hot chocolate  
 
 29. **The Rainbow River**  

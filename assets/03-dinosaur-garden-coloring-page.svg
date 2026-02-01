@@ -1,0 +1,204 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <!-- Background -->
+  <rect width="800" height="1000" fill="white"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="black">
+    The Dinosaur Garden
+  </text>
+  <text x="400" y="70" font-family="Arial, sans-serif" font-size="18" text-anchor="middle" fill="black">
+    Color Max and Mia's Adventure!
+  </text>
+  
+  <!-- Large ferns on left -->
+  <path d="M 50 900 Q 50 700 60 600 Q 65 500 70 400" stroke="black" stroke-width="4" fill="none"/>
+  <path d="M 60 600 Q 30 610 20 630" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 65 550 Q 35 560 25 580" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 70 500 Q 40 510 30 530" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 70 450 Q 40 460 30 480" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 60 600 Q 90 610 100 630" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 65 550 Q 95 560 105 580" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 70 500 Q 100 510 110 530" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Large ferns on right -->
+  <path d="M 750 900 Q 750 700 740 600 Q 735 500 730 400" stroke="black" stroke-width="4" fill="none"/>
+  <path d="M 740 600 Q 770 610 780 630" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 735 550 Q 765 560 775 580" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 730 500 Q 760 510 770 530" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 730 450 Q 760 460 770 480" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 740 600 Q 710 610 700 630" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 735 550 Q 705 560 695 580" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Giant flowers (left side) -->
+  <circle cx="120" cy="850" r="35" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="120" cy="850" r="15" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="120" cy="815" rx="12" ry="20" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="155" cy="850" rx="12" ry="20" stroke="black" stroke-width="3" fill="none" transform="rotate(60 155 850)"/>
+  <ellipse cx="155" cy="850" rx="12" ry="20" stroke="black" stroke-width="3" fill="none" transform="rotate(120 155 850)"/>
+  <ellipse cx="120" cy="885" rx="12" ry="20" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="85" cy="850" rx="12" ry="20" stroke="black" stroke-width="3" fill="none" transform="rotate(-60 85 850)"/>
+  <path d="M 120 850 L 120 920" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Giant flowers (right side) -->
+  <circle cx="680" cy="860" r="30" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="680" cy="860" r="12" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="680" cy="830" rx="10" ry="18" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="710" cy="860" rx="10" ry="18" stroke="black" stroke-width="3" fill="none" transform="rotate(60 710 860)"/>
+  <ellipse cx="710" cy="860" rx="10" ry="18" stroke="black" stroke-width="3" fill="none" transform="rotate(120 710 860)"/>
+  <ellipse cx="680" cy="890" rx="10" ry="18" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="650" cy="860" rx="10" ry="18" stroke="black" stroke-width="3" fill="none" transform="rotate(-60 650 860)"/>
+  <path d="M 680 860 L 680 920" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Brachiosaurus (friendly, large dinosaur) -->
+  <!-- Body -->
+  <ellipse cx="450" cy="450" rx="120" ry="90" stroke="black" stroke-width="4" fill="none"/>
+  
+  <!-- Back legs -->
+  <rect x="420" y="450" width="30" height="120" rx="8" stroke="black" stroke-width="4" fill="none"/>
+  <rect x="480" y="450" width="30" height="120" rx="8" stroke="black" stroke-width="4" fill="none"/>
+  
+  <!-- Front legs -->
+  <rect x="340" y="420" width="30" height="150" rx="8" stroke="black" stroke-width="4" fill="none"/>
+  <rect x="390" y="420" width="30" height="150" rx="8" stroke="black" stroke-width="4" fill="none"/>
+  
+  <!-- Long neck -->
+  <path d="M 350 400 Q 320 350 310 250 Q 305 200 310 180" stroke="black" stroke-width="25" fill="none" stroke-linecap="round"/>
+  
+  <!-- Head -->
+  <ellipse cx="310" cy="165" rx="35" ry="30" stroke="black" stroke-width="4" fill="none"/>
+  
+  <!-- Eye (kind and friendly) -->
+  <circle cx="320" cy="160" r="8" stroke="black" stroke-width="3" fill="black"/>
+  <circle cx="323" cy="157" r="3" fill="white"/>
+  
+  <!-- Smile -->
+  <path d="M 300 175 Q 310 180 320 175" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Nostril -->
+  <circle cx="295" cy="168" r="3" stroke="black" stroke-width="2" fill="none"/>
+  
+  <!-- Spots on body for coloring fun -->
+  <circle cx="450" cy="420" r="15" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="480" cy="460" r="12" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="410" cy="470" r="14" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Tail -->
+  <path d="M 570 450 Q 620 455 650 460" stroke="black" stroke-width="20" fill="none" stroke-linecap="round"/>
+  
+  <!-- Max (older kid, boy) -->
+  <!-- Head -->
+  <circle cx="220" cy="680" r="30" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Hair (messy/spiky) -->
+  <path d="M 195 660 L 190 645" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 210 655 L 210 640" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 230 655 L 235 640" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  <path d="M 245 665 L 255 655" stroke="black" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Eyes -->
+  <circle cx="210" cy="680" r="4" fill="black"/>
+  <circle cx="230" cy="680" r="4" fill="black"/>
+  
+  <!-- Smile -->
+  <path d="M 205 695 Q 220 700 235 695" stroke="black" stroke-width="2.5" fill="none"/>
+  
+  <!-- Body (simple shirt) -->
+  <rect x="190" y="710" width="60" height="70" rx="10" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Arms (one waving at dinosaur) -->
+  <path d="M 190 720 L 150 700 L 140 680" stroke="black" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="140" cy="680" r="10" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 250 720 L 270 750" stroke="black" stroke-width="8" fill="none" stroke-linecap="round"/>
+  <circle cx="270" cy="750" r="10" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Legs -->
+  <rect x="200" y="780" width="18" height="60" rx="5" stroke="black" stroke-width="3" fill="none"/>
+  <rect x="222" y="780" width="18" height="60" rx="5" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Shoes -->
+  <ellipse cx="209" cy="845" rx="15" ry="8" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="231" cy="845" rx="15" ry="8" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Mia (younger kid, toddler) -->
+  <!-- Head -->
+  <circle cx="570" cy="730" r="25" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Pigtails -->
+  <circle cx="545" cy="720" r="12" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="595" cy="720" r="12" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Eyes (big and happy) -->
+  <circle cx="560" cy="730" r="4" fill="black"/>
+  <circle cx="580" cy="730" r="4" fill="black"/>
+  
+  <!-- Big smile -->
+  <path d="M 555 742 Q 570 750 585 742" stroke="black" stroke-width="2.5" fill="none"/>
+  
+  <!-- Body (dress) -->
+  <path d="M 545 755 L 545 810 L 595 810 L 595 755 Z" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 545 755 Q 570 770 595 755" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Arms (one reaching toward dinosaur) -->
+  <path d="M 545 765 L 510 780 L 500 770" stroke="black" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="500" cy="770" r="8" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 595 765 L 620 790" stroke="black" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="620" cy="790" r="8" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Legs -->
+  <rect x="555" y="810" width="14" height="45" rx="4" stroke="black" stroke-width="3" fill="none"/>
+  <rect x="571" y="810" width="14" height="45" rx="4" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Shoes -->
+  <ellipse cx="562" cy="858" rx="12" ry="6" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="578" cy="858" rx="12" ry="6" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Berry pile (dinosaur picnic) -->
+  <circle cx="350" cy="600" r="18" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="370" cy="595" r="16" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="365" cy="615" r="15" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="385" cy="608" r="14" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Small hearts floating (showing friendship) -->
+  <path d="M 250 300 Q 245 290 250 285 Q 255 290 260 285 Q 265 290 260 300 Q 255 305 250 300 Z" stroke="black" stroke-width="2.5" fill="none"/>
+  <path d="M 520 250 Q 515 243 520 239 Q 524 243 528 239 Q 532 243 528 250 Q 524 254 520 250 Z" stroke="black" stroke-width="2.5" fill="none"/>
+  
+  <!-- Baby dinosaur (small, cute) -->
+  <ellipse cx="650" cy="640" rx="40" ry="30" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="640" cy="620" r="20" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="633" cy="618" r="5" fill="black"/>
+  <circle cx="635" cy="616" r="2" fill="white"/>
+  <path d="M 630 628 Q 635 631 640 628" stroke="black" stroke-width="2" fill="none"/>
+  <rect x="625" y="640" width="12" height="30" rx="4" stroke="black" stroke-width="3" fill="none"/>
+  <rect x="643" y="640" width="12" height="30" rx="4" stroke="black" stroke-width="3" fill="none"/>
+  <ellipse cx="631" cy="673" rx="8" ry="5" stroke="black" stroke-width="2" fill="none"/>
+  <ellipse cx="649" cy="673" rx="8" ry="5" stroke="black" stroke-width="2" fill="none"/>
+  
+  <!-- Glowing hatch (partially visible) -->
+  <circle cx="150" cy="920" r="45" stroke="black" stroke-width="4" fill="none"/>
+  <path d="M 150 875 L 150 965" stroke="black" stroke-width="3" fill="none"/>
+  <path d="M 105 920 L 195 920" stroke="black" stroke-width="3" fill="none"/>
+  <circle cx="150" cy="920" r="25" stroke="black" stroke-width="3" fill="none"/>
+  <polygon points="150,895 160,910 150,905 140,910" stroke="black" stroke-width="3" fill="none"/>
+  
+  <!-- Stars in the sky -->
+  <path d="M 600 130 L 605 140 L 615 142 L 607 148 L 610 158 L 600 152 L 590 158 L 593 148 L 585 142 L 595 140 Z" stroke="black" stroke-width="2" fill="none"/>
+  <path d="M 180 110 L 183 117 L 190 118 L 185 122 L 187 129 L 180 125 L 173 129 L 175 122 L 170 118 L 177 117 Z" stroke="black" stroke-width="2" fill="none"/>
+  <path d="M 720 100 L 723 107 L 730 108 L 725 112 L 727 119 L 720 115 L 713 119 L 715 112 L 710 108 L 717 107 Z" stroke="black" stroke-width="2" fill="none"/>
+  
+  <!-- Sun -->
+  <circle cx="680" cy="120" r="30" stroke="black" stroke-width="3" fill="none"/>
+  <line x1="680" y1="85" x2="680" y2="70" stroke="black" stroke-width="3"/>
+  <line x1="680" y1="155" x2="680" y2="170" stroke="black" stroke-width="3"/>
+  <line x1="645" y1="120" x2="630" y2="120" stroke="black" stroke-width="3"/>
+  <line x1="715" y1="120" x2="730" y2="120" stroke="black" stroke-width="3"/>
+  <line x1="655" y1="95" x2="645" y2="85" stroke="black" stroke-width="3"/>
+  <line x1="705" y1="145" x2="715" y2="155" stroke="black" stroke-width="3"/>
+  <line x1="655" y1="145" x2="645" y2="155" stroke="black" stroke-width="3"/>
+  <line x1="705" y1="95" x2="715" y2="85" stroke="black" stroke-width="3"/>
+  
+  <!-- Copyright/Credit -->
+  <text x="400" y="985" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="black">
+    © 2026 The Hatch Adventures • Free to print for personal use
+  </text>
+</svg>

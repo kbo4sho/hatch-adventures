@@ -26,8 +26,9 @@ const fullPath = path.join(projectRoot, storyFile);
 const content = fs.readFileSync(fullPath, 'utf8');
 
 // Remove markdown formatting
+// NOTE: Only strip YAML frontmatter if it is at the very top of the file.
 const storyText = content
-    .replace(/^---[\s\S]*?^---/m, '') // Remove YAML frontmatter
+    .replace(/^---\n[\s\S]*?\n---\n/, '') // Remove YAML frontmatter (top-of-file only)
     .replace(/^#+\s+.*/gm, '') // Remove headers
     .replace(/^\*\*.*/gm, '') // Remove bold lines
     .replace(/\*/g, '') // Remove asterisks

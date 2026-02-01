@@ -61,49 +61,103 @@ console.log(`   Audio: ${Math.floor(audioDuration / 60)}m ${Math.floor(audioDura
 console.log(`   Images: ${imageCount} scenes`);
 console.log('');
 
-// Calculate duration per image
-const durationPerImage = audioDuration / imageCount;
+// Detect intro/outro cards (00.png and highest numbered image)
+const imageFiles = images.map(p => path.basename(p));
+const hasIntro = imageFiles[0] === '00.png';
+const hasOutro = imageFiles.length >= 3; // Assume last image is outro if we have intro + scenes + outro
 
-// Create ffmpeg filter for slideshow with crossfades
-function createSlideshowFilter(images, durationPerImage) {
-    const fadeDuration = 0.5;
-    let filter = '';
-    
-    // Input section: load all images
+const INTRO_DURATION = 4.0;  // seconds
+const OUTRO_DURATION = 4.0;  // seconds
+
+// Calculate duration per scene image
+let introDuration = hasIntro ? INTRO_DURATION : 0;
+let outroDuration = hasOutro ? OUTRO_DURATION : 0;
+let sceneCount = imageCount - (hasIntro ? 1 : 0) - (hasOutro ? 1 : 0);
+let sceneDuration = (audioDuration - introDuration - outroDuration) / Math.max(sceneCount, 1);
+
+// Build duration array for each image
+const imageDurations = images.map((img, i) => {
+    if (hasIntro && i === 0) return introDuration;
+    if (hasOutro && i === imageCount - 1) return outroDuration;
+    return sceneDuration;
+});
+
+console.log(`⏱️  Timing:`);
+if (hasIntro) console.log(`   Intro card: ${introDuration}s`);
+console.log(`   ${sceneCount} scene(s): ${sceneDuration.toFixed(2)}s each`);
+if (hasOutro) console.log(`   Outro card: ${outroDuration}s`);
+console.log('');
+
+// Smooth crossfade dissolve between scenes
+const XFADE_DURATION = 1.5; // seconds for dissolve transition
+
+// Two-pass approach: render individual clips first, then chain xfades
+// This avoids ffmpeg choking on large filter graphs with many inputs
+
+function renderClips(images, durations) {
+    const tmpDir = path.join(outputDir, '.tmp-clips');
+    if (!fs.existsSync(tmpDir)) fs.mkdirSync(tmpDir, { recursive: true });
+
+    const clipPaths = [];
     images.forEach((img, i) => {
-        filter += `[${i}:v]scale=1920:1080:force_original_aspect_ratio=decrease,`
-        filter += `pad=1920:1080:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30,`
-        filter += `fade=t=in:st=0:d=${fadeDuration},`
-        filter += `fade=t=out:st=${durationPerImage - fadeDuration}:d=${fadeDuration}[v${i}];`;
+        const clipPath = path.join(tmpDir, `clip-${String(i).padStart(2, '0')}.mp4`);
+        clipPaths.push(clipPath);
+        if (fs.existsSync(clipPath)) return; // reuse if already rendered
+        const dur = durations[i];
+        const cmd = `ffmpeg -y -loop 1 -t ${dur} -i "${img}" ` +
+            `-vf "scale=1920:1080:force_original_aspect_ratio=decrease,pad=1920:1080:(ow-iw)/2:(oh-ih)/2,setsar=1,fps=30" ` +
+            `-c:v libx264 -preset fast -crf 18 -pix_fmt yuv420p "${clipPath}"`;
+        execSync(cmd, { stdio: 'pipe' });
     });
-    
-    // Concat all clips
-    filter += images.map((_, i) => `[v${i}]`).join('');
-    filter += `concat=n=${imageCount}:v=1:a=0[outv]`;
-    
-    return filter;
+    return { tmpDir, clipPaths };
 }
 
-const filter = createSlideshowFilter(images, durationPerImage);
+function createVideoWithXfade(clipPaths, durations, audioFile, outputFile) {
+    // Build chained xfade filter
+    const inputArgs = clipPaths.map(p => `-i "${p}"`).join(' ');
+    
+    let filter = '';
+    let cumulative = durations[0];
+    let prevLabel = '0:v';
+    
+    for (let i = 1; i < clipPaths.length; i++) {
+        const offset = Math.max(0, cumulative - XFADE_DURATION).toFixed(3);
+        const outLabel = (i === clipPaths.length - 1) ? 'outv' : `x${i}`;
+        filter += `[${prevLabel}][${i}:v]xfade=transition=dissolve:duration=${XFADE_DURATION}:offset=${offset}[${outLabel}];`;
+        cumulative += durations[i] - XFADE_DURATION;
+        prevLabel = outLabel;
+    }
+    
+    // Remove trailing semicolon
+    filter = filter.replace(/;$/, '');
+    
+    const audioIdx = clipPaths.length;
+    const cmd = `ffmpeg -y ${inputArgs} -i "${audioFile}" ` +
+        `-filter_complex "${filter}" ` +
+        `-map "[outv]" -map ${audioIdx}:a ` +
+        `-c:v libx264 -preset medium -crf 23 -pix_fmt yuv420p ` +
+        `-c:a aac -b:a 192k -shortest "${outputFile}"`;
+    
+    execSync(cmd, { stdio: 'inherit' });
+}
 
-// Build ffmpeg command
-const inputArgs = images.map(img => `-loop 1 -t ${durationPerImage} -i "${img}"`).join(' ');
+function cleanupClips(tmpDir) {
+    try {
+        fs.readdirSync(tmpDir).forEach(f => fs.unlinkSync(path.join(tmpDir, f)));
+        fs.rmdirSync(tmpDir);
+    } catch (e) { /* ignore cleanup errors */ }
+}
+
+// Render individual image clips
+console.log('📎 Rendering image clips...');
+const { tmpDir, clipPaths } = renderClips(images, imageDurations);
+console.log(`   ${clipPaths.length} clips ready`);
+console.log('');
 
 function createVideo(outputFile, width, height, format) {
-    const scale = width !== 1920 || height !== 1080 
-        ? `,scale=${width}:${height}:force_original_aspect_ratio=decrease,pad=${width}:${height}:(ow-iw)/2:(oh-ih)/2`
-        : '';
-    
-    const cmd = `ffmpeg ${inputArgs} -i "${audioFile}" \
-        -filter_complex "${filter}" \
-        -map "[outv]" -map ${imageCount}:a \
-        -c:v libx264 -preset medium -crf 23 \
-        -c:a aac -b:a 192k \
-        -shortest -y "${outputFile}"`;
-    
     console.log(`🎥 Creating ${format}...`);
     try {
-        execSync(cmd, { stdio: 'inherit' });
+        createVideoWithXfade(clipPaths, imageDurations, audioFile, outputFile);
         const size = (fs.statSync(outputFile).size / (1024 * 1024)).toFixed(2);
         console.log(`✅ ${format} complete! (${size} MB)`);
     } catch (err) {
@@ -134,5 +188,8 @@ console.log('📁 Output files:');
 outputs.forEach(({ file }) => {
     console.log(`   ${path.join(outputDir, file)}`);
 });
+console.log('');
+console.log('🧹 Cleaning up temp clips...');
+cleanupClips(tmpDir);
 console.log('');
 console.log('Next: Upload to platforms or run upload scripts');
