@@ -1,14 +1,14 @@
-# Hatch Hoppers — Episode 3 Narration Script
+# Hatch Hoppers - Episode 3 Narration Script
 
-Welcome, Hatch Hoppers. I’m your story guide. Max is seven, Mia is three, and today… we’re stepping into the unknown. Hands together. Deep breath. Hatch time.
+## [INTRO]
 
----
+Welcome, Hatch Hoppers. I'm your story guide. Max is seven, Mia is three, and today… we're stepping into the unknown. Hands together. Deep breath. Hatch time.
 
-## Episode 3: The Robot Playground
+## [SCENE 01] — The Neon Playground
 
 The mint-green tunnel sounded like soft wind chimes.
 
-Max held Mia’s hand. Mia held Flop. Flop held… nothing, because Flop was a bunny, not a helper.
+Max held Mia's hand. Mia held Flop. Flop held… nothing, because Flop was a bunny, not a helper.
 
 Whooooosh!
 
@@ -16,11 +16,11 @@ They tumbled out of the hatch and landed on something springy.
 
 Boing.
 
-Mia bounced once and giggled. "Maxy! It’s bouncy floor!"
+Mia bounced once and giggled. "Maxy! It's bouncy floor!"
 
 Max pushed himself up and stared.
 
-They were standing in the brightest playground he’d ever seen.
+They were standing in the brightest playground he'd ever seen.
 
 Not a regular playground with wood chips and slides.
 
@@ -30,9 +30,9 @@ When Max stepped, the tile lit up blue.
 
 When Mia stepped, hers lit up pink.
 
-Mia wiggled her toes. "It’s like… dance lights!"
+Mia wiggled her toes. "It's like… dance lights!"
 
-Above them, the sky looked like morning—but with floating clouds shaped like gears.
+Above them, the sky looked like morning-but with floating clouds shaped like gears.
 
 And everywhere… robots.
 
@@ -48,11 +48,13 @@ A tiny robot was chasing a glowing ball that hovered an inch above the ground.
 
 Max said, "Okay. This is awesome."
 
+## [SCENE 02] — Meeting GREET-0
+
 A cheerful voice rang out.
 
 "WELCOME, NEW PLAYERS!"
 
-A robot rolled up to them. It was about Max’s height and shaped like a friendly lunchbox, with bright green eyes on a screen-face and a little antenna that wiggled when it talked.
+A robot rolled up to them. It was about Max's height and shaped like a friendly lunchbox, with bright green eyes on a screen-face and a little antenna that wiggled when it talked.
 
 "I am GREET-0," it said proudly. "I greet. That is my job."
 
@@ -64,7 +66,7 @@ Mia lifted Flop. "Flop."
 
 "HELLO, FLOP," GREET-0 said politely.
 
-Max smiled. "We’re Max and Mia. Where are we?"
+Max smiled. "We're Max and Mia. Where are we?"
 
 GREET-0 pointed at a sign made of glowing letters.
 
@@ -78,25 +80,27 @@ Mia nodded seriously. "Good rule."
 
 "Yes," GREET-0 agreed. "TURN-TAKING IS PEACEFUL."
 
+## [SCENE 03] — PLAY-7 Sitting Alone
+
 Max noticed something else.
 
 Off to the side, behind a shiny climbing dome, sat a robot all alone.
 
-It wasn’t playing.
+It wasn't playing.
 
 It was holding a little hover-ball and staring at the ground.
 
 Its screen-face showed a tiny blue dot, like a sad raindrop.
 
-Max lowered his voice. "Who’s that?"
+Max lowered his voice. "Who's that?"
 
-GREET-0’s antenna drooped. "THAT IS PLAY-7. PLAY-7 DOES NOT PLAY."
+GREET-0's antenna drooped. "THAT IS PLAY-7. PLAY-7 DOES NOT PLAY."
 
 Mia frowned. "Why not?"
 
-GREET-0 clicked softly. "PLAY-7’S LAUGH MODULE IS OFFLINE."
+GREET-0 clicked softly. "PLAY-7'S LAUGH MODULE IS OFFLINE."
 
-Max blinked. "Like… it can’t laugh?"
+Max blinked. "Like… it can't laugh?"
 
 "CORRECT," said GREET-0. "NO LAUGH. NO PLAY."
 
@@ -104,11 +108,13 @@ Mia looked at Max with big eyes.
 
 That look said: we help.
 
-Max nodded. "Let’s go say hi."
+Max nodded. "Let's go say hi."
+
+## [SCENE 04] — Saying Hi to PLAY-7
 
 They walked over slowly.
 
-Max crouched down. "Hi. I’m Max. This is Mia."
+Max crouched down. "Hi. I'm Max. This is Mia."
 
 Mia held up Flop. "And Flop."
 
@@ -116,7 +122,7 @@ PLAY-7 looked up. Its screen-face flickered.
 
 "HELLO," it said quietly. "I AM PLAY-7."
 
-Max pointed to the hover-ball. "That’s cool. Do you want to play?"
+Max pointed to the hover-ball. "That's cool. Do you want to play?"
 
 PLAY-7 looked at the playground.
 
@@ -129,6 +135,8 @@ Mia stepped closer and tapped the ball.
 The ball floated up.
 
 Mia whispered, "Ooooo."
+
+## [SCENE 05] — Rolling the Hover-Ball
 
 Then Mia did something she was very good at.
 
@@ -146,7 +154,7 @@ It wobbled, then floated.
 
 Max caught it.
 
-"Nice!" Max said. "Okay—my turn."
+"Nice!" Max said. "Okay-my turn."
 
 He rolled it to Mia.
 
@@ -160,15 +168,17 @@ Its antenna perked up.
 
 "OBSERVATION," GREET-0 announced. "PLAY-7 IS PLAYING."
 
-PLAY-7’s screen-face changed.
+PLAY-7's screen-face changed.
 
 The sad blue dot became… a small curve.
 
 Almost a smile.
 
+## [SCENE 06] — PLAY-7 Laughs
+
 Then PLAY-7 made a sound.
 
-It wasn’t a perfect laugh.
+It wasn't a perfect laugh.
 
 It was more like a tiny robot hiccup.
 
@@ -196,17 +206,19 @@ A tiny robot bounced up holding two stickers shaped like stars.
 
 "REWARD," it chirped.
 
-Max took a star sticker and stuck it on PLAY-7’s chest.
+Max took a star sticker and stuck it on PLAY-7's chest.
 
 Mia stuck hers on Flop.
 
 "Now Flop is robot," Mia declared.
 
-PLAY-7’s screen-face showed a bigger smile.
+PLAY-7's screen-face showed a bigger smile.
 
 "I WOULD LIKE TO TRY THE SWING," PLAY-7 said.
 
-"Let’s do it," Max said.
+"Let's do it," Max said.
+
+## [SCENE 07] — The Swing Set
 
 They walked to the swing set.
 
@@ -227,6 +239,8 @@ And this time, the laugh came out louder.
 The whole playground cheered.
 
 Lights on the ground flashed like a celebration.
+
+## [SCENE 08] — The Electric-Blue Hatch
 
 Mia pointed behind the climbing dome. "Maxy… hatch."
 
@@ -268,6 +282,6 @@ Max laughed. "Only one way to find out."
 
 And together, the Hatch Hoppers stepped into the electric-blue light.
 
----
+## [OUTRO]
 
 Thanks for hopping with us. If you liked this adventure, tell a grown-up you want another. Until next time—hands together. Deep breath. Hatch time.

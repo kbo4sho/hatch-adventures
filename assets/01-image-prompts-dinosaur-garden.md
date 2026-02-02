@@ -1,9 +1,35 @@
 # Episode 1: The Dinosaur Garden — Image Prompts
 
-Save to: `assets/images/story-01-dinosaur-garden/01.png` through `08.png`
-Resolution: **1536×1024** (landscape)
+**IMPORTANT: All video images (00.png - 08.png) MUST be 1536×1024 landscape**
+
+Save to: `assets/images/story-01-dinosaur-garden/[file].png`
+
+- **COVER.png:** 1024×1536 (portrait, optional - for social/thumbnails only, NOT in video)
+- **00.png - 08.png:** 1536×1024 (landscape, required for video)
 
 **Style prefix (applied to all prompts):** `Children's book illustration style, warm and inviting.`
+
+---
+
+## COVER.png — Thumbnail/Cover Image
+
+Resolution: **1024×1536** (portrait / 2:3 ratio)
+
+Children's book illustration style, warm and inviting. A giant friendly Brachiosaurus with warm brown eyes and a gentle smile fills the upper half of the image, bending her long neck down toward two small children standing in a lush prehistoric garden. A 7-year-old boy (brown hair, blue shirt) looks up in wonder, and his 3-year-old sister (blonde pigtails, pink dress) waves enthusiastically at the dinosaur. The boy holds a stuffed white bunny. Around them: enormous colorful flowers (red, purple, yellow) the size of beach balls, giant ferns, and vibrant prehistoric plants. Bright orange sky visible behind the dinosaur's head. Bold, eye-catching composition perfect for a thumbnail - the gentle giant dinosaur creates an iconic, memorable image. Warm golden lighting, rich saturated colors. Safe, magical, awe-inspiring atmosphere.
+
+**Purpose:** YouTube thumbnail, social media cover, podcast artwork
+**Aspect ratio:** 2:3 portrait (1024×1536)
+
+---
+
+## 00.png — Intro Card (Pure Illustration)
+
+**Resolution: 1536×1024 (landscape, MUST be this size)**
+
+Children's book illustration style, warm and inviting. A dramatic, iconic moment: A friendly Brachiosaurus bending her long neck down to greet two small children standing in a lush prehistoric garden. A 7-year-old boy (brown hair, blue shirt) looks up in wonder, and his 3-year-old sister (blonde pigtails, pink dress) waves enthusiastically. The boy holds a stuffed white bunny. Around them: enormous colorful flowers (red, purple, yellow) the size of beach balls, giant ferns, towering prehistoric trees against a bright orange sky. The dinosaur's warm brown eyes and gentle smile are the focal point. Warm golden lighting, rich saturated colors. Safe, magical, awe-inspiring atmosphere. Bold, memorable composition suitable for an opening sequence. NO TEXT - illustration only, text will be added separately.
+
+**Purpose:** Video intro card (4 seconds, will have text overlay added)
+**Size requirement:** MUST be 1536×1024 landscape (same aspect ratio as all other scenes)
 
 ---
 

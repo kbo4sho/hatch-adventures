@@ -1,0 +1,99 @@
+# Episode 3: The Robot Playground — Image Prompts
+
+**IMPORTANT: All video images (00.png - 08.png) MUST be 1792×1024 landscape**
+
+Save to: `assets/images/story-03-robot-playground/[file].png`
+
+- **COVER.png:** 1024×1792 (portrait, optional - for social/thumbnails only, NOT in video)
+- **00.png - 08.png:** 1792×1024 (landscape, required for video)
+
+**Style prefix (applied to all prompts):** `Children's book illustration style, warm and inviting.`
+
+---
+
+## COVER.png — Thumbnail/Cover Image
+
+Resolution: **1024×1792** (portrait / 2:3 ratio)
+
+Children's book illustration style, warm and inviting. A bright futuristic playground scene with two children surrounded by friendly robots. A 7-year-old boy (brown hair, blue shirt, khaki shorts) and his 3-year-old sister (blonde pigtails, pink dress) stand on a glowing floor that lights up blue and pink under their feet. The boy holds a small white stuffed bunny. A cheerful lunchbox-shaped robot with bright green eyes on a screen-face rolls nearby. Other friendly robots of various shapes play in the background - one on a swing, others building blocks. Smooth silver paths, glowing neon rails in blues and pinks, soft rubbery tiles. Morning sky with floating cloud-shaped gears. Vibrant saturated colors, bold composition perfect for a thumbnail. Safe, magical, futuristic atmosphere.
+
+**Purpose:** YouTube thumbnail, social media cover, podcast artwork
+**Aspect ratio:** 2:3 portrait (1024×1792)
+
+---
+
+## 00.png — Intro Card (Pure Illustration)
+
+**Resolution: 1792×1024 (landscape, MUST be this size)**
+
+Children's book illustration style, warm and inviting. A dramatic, iconic moment: Two children standing on a vibrant futuristic playground with friendly robots around them. A 7-year-old boy with brown hair wearing a blue t-shirt and khaki shorts (Max) stands amazed, holding a small white stuffed bunny (Flop). His 3-year-old sister with blonde pigtails in a pink dress (Mia) bounces excitedly on the color-changing floor. The playground is made of smooth silver paths, glowing neon rails in electric blues and hot pinks, and soft rubbery tiles that light up under their feet - blue under Max, pink under Mia. A cheerful lunchbox-shaped robot (GREET-0) with bright green eyes on a screen-face and a wiggly antenna greets them. Behind them, a morning sky with floating cloud-shaped gears. Other robots play in the background. Warm golden lighting with vibrant neon accents. Safe, magical, wonder-filled atmosphere. Bold, memorable composition suitable for an opening sequence. NO TEXT - illustration only, text will be added separately.
+
+**Purpose:** Video intro card (4 seconds, will have text overlay added)
+**Size requirement:** MUST be 1792×1024 landscape (same aspect ratio as all other scenes)
+
+---
+
+## 01.png — The Neon Playground
+
+Children's book illustration style, warm and inviting. Two children tumbling onto a springy, color-changing floor in a bright futuristic playground. A 7-year-old boy with brown hair and a blue t-shirt (Max) pushes himself up, eyes wide with wonder. His 3-year-old sister with blonde pigtails and a pink dress (Mia) bounces once and giggles, holding a small white stuffed bunny (Flop). The playground has smooth silver paths, glowing neon rails in electric blues and hot pinks, and soft rubbery tiles that light up under their feet - blue where Max steps, pink where Mia steps. Above them, a morning sky with floating clouds shaped like gears. In the background, friendly robots of different shapes and sizes play together - a round robot pushing a tall robot on a swing, a boxy robot building a perfect block tower with right angles, a tiny robot chasing a glowing hover-ball. Vibrant saturated colors, warm golden lighting. Safe and magical atmosphere.
+
+---
+
+## 02.png — Meeting GREET-0
+
+Children's book illustration style, warm and inviting. A cheerful lunchbox-shaped robot rolling up to two children on a colorful futuristic playground. The robot (GREET-0) is about the height of a 7-year-old, with bright green eyes on a screen-face and a little antenna that wiggles. A 7-year-old boy with brown hair and a blue t-shirt (Max) smiles at the robot. His 3-year-old sister with blonde pigtails in a pink dress (Mia) holds up a small white stuffed bunny (Flop) to introduce it. Behind them, a glowing sign reads "ROBOT PLAYGROUND" with smaller text below: "RULE #1: EVERYONE GETS A TURN." The playground floor glows in soft blues and pinks. In the background, other friendly robots play on swings and climbing structures. Morning sky with floating gear-shaped clouds. Warm golden lighting, vibrant neon accents. Friendly, welcoming atmosphere.
+
+---
+
+## 03.png — PLAY-7 Sitting Alone
+
+Children's book illustration style, warm and inviting. Behind a shiny climbing dome on a futuristic playground, a small robot sits alone holding a little hover-ball. The robot (PLAY-7) is smaller than the others, slightly dusty, with a boxy body and a screen-face showing a tiny blue dot like a sad raindrop. It stares at the ground. In the background, other robots play happily - one on a swing, others building towers. Nearby, a 7-year-old boy with brown hair in a blue t-shirt (Max), a 3-year-old girl with blonde pigtails in a pink dress (Mia), and a cheerful lunchbox-shaped robot (GREET-0) watch with concerned expressions. The playground has smooth silver paths and glowing tiles. Contrast between the bright, active playground and this quiet, lonely corner. Soft lighting, empathetic gentle mood.
+
+---
+
+## 04.png — Saying Hi to PLAY-7
+
+Children's book illustration style, warm and inviting. A 7-year-old boy with brown hair and a blue t-shirt (Max) crouching down to be at eye level with a small sad robot sitting on a playground floor. Max smiles gently, kindly. Behind him, his 3-year-old sister with blonde pigtails in a pink dress (Mia) holds up a small white stuffed bunny (Flop) to introduce it. The robot (PLAY-7) is small and boxy, with a screen-face showing a flickering expression, surprised someone came to talk. It holds a small glowing hover-ball. The playground's colorful tiles glow softly in blues and pinks around them. In the background, other friendly robots (round, boxy, cylindrical shapes) watch curiously from a distance near silver playground structures. Warm golden lighting with soft neon glow. Quiet, kind, intimate moment. Safe and hopeful atmosphere.
+
+---
+
+## 05.png — Rolling the Hover-Ball
+
+Children's book illustration style, warm and inviting. A 3-year-old girl with blonde pigtails and a pink dress (Mia) taking one step back, rolling a glowing hover-ball gently toward a small robot on a colorful playground floor. The ball floats slightly above the ground, leaving a soft trail of light. The robot (PLAY-7) stares at the ball with curiosity, its screen-face showing interest. Nearby, a 7-year-old boy with brown hair in a blue t-shirt (Max) watches with an encouraging smile. A cheerful lunchbox-shaped robot (GREET-0) with bright green eyes on a screen-face and a wiggly antenna watches with its antenna perked up. The colorful floor tiles glow in soft blues and pinks. Simple, sweet moment of connection. Warm golden lighting, gentle hopeful atmosphere.
+
+---
+
+## 06.png — PLAY-7 Laughs
+
+Children's book illustration style, warm and inviting. A small robot (PLAY-7) with its screen-face showing a small curved smile - it has just made its first laugh, a tiny robot hiccup. A 3-year-old girl with blonde pigtails in a pink dress (Mia) bursts out laughing beside it. A 7-year-old boy with brown hair and a blue t-shirt (Max) grins proudly. A lunchbox-shaped robot (GREET-0) with bright green eyes spins in a happy circle nearby, its antenna wiggling joyfully. Confetti-like lights flash on the colorful playground floor in blues and pinks. Other robots are starting to notice and roll closer - a tall robot holds out a jump-rope made of glowing light, a tiny robot bounces up holding star stickers. PLAY-7 has a star sticker on its chest. Celebration, joy, breakthrough moment. Warm golden lighting, festive atmosphere.
+
+---
+
+## 07.png — The Swing Set
+
+Children's book illustration style, warm and inviting. A small robot (PLAY-7) sitting on a swing in a futuristic playground, swinging forward with its screen-face showing a big smile. A cheerful lunchbox-shaped robot (GREET-0) pushes the swing gently from behind, its antenna wiggling happily. A 7-year-old boy with brown hair in a blue t-shirt (Max) stands nearby cheering. A 3-year-old girl with blonde pigtails in a pink dress (Mia) sits on the bouncy floor kicking her feet happily, a small white stuffed bunny (Flop) beside her. The playground lights flash like a celebration in blues and pinks. Other friendly robots cheer in the background. PLAY-7 has a star sticker on its chest. Pure joy, inclusion, friendship. Bright vibrant colors, warm golden lighting, festive atmosphere.
+
+---
+
+## 08.png — The Electric-Blue Hatch
+
+Children's book illustration style, warm and inviting. Under a shiny slide behind a climbing dome on a futuristic playground, a round metal hatch with swirly patterns glows electric blue. Two children kneel beside it - a 7-year-old boy with brown hair in a blue t-shirt (Max) reaches for the handle, while his 3-year-old sister with blonde pigtails in a pink dress (Mia) grabs his hand. The boy holds a small white stuffed bunny (Flop). A small robot (PLAY-7) rolls over holding out a glowing hover-ball as a gift. A lunchbox-shaped robot (GREET-0) salutes nearby, its antenna straight. Other friendly robots wave goodbye in the background near silver playground structures. The playground's neon lights create a warm glow in blues and pinks. Bittersweet but warm farewell, excited for the next adventure. The hatch crackles softly with electric blue light. Warm golden lighting overall.
+
+---
+
+## Character Reference
+
+- **Max:** 7 years old, brown hair, blue t-shirt, khaki shorts, curious and brave
+- **Mia:** 3 years old, blonde pigtails, pink dress, joyful and fearless
+- **Flop:** Small white stuffed bunny, floppy ears
+- **GREET-0:** Max's height, lunchbox-shaped, bright green eyes on screen-face, wiggly antenna
+- **PLAY-7:** Smaller robot (waist-high to Max), boxy body, screen-face with expressions, holds a hover-ball, gets a star sticker on chest (after scene 06)
+
+## Style Guide
+
+- **Every prompt starts with:** `Children's book illustration style, warm and inviting.`
+- Vibrant saturated colors - electric blues, hot pinks, mint greens, silvers
+- Warm golden lighting throughout (even in futuristic setting)
+- Friendly, approachable robots (geometric but cute, not threatening)
+- Consistent character designs across all 9 images
+- Safe, magical, wonder-filled atmosphere

@@ -1,0 +1,53 @@
+{
+  "story": "story-02-candy-cloud-castle",
+  "scenes": [
+    {
+      "image": "01.png",
+      "start": 0,
+      "duration": 32.736,
+      "cue": "Landing on the Cloud"
+    },
+    {
+      "image": "02.png",
+      "start": 42,
+      "duration": 26.568,
+      "cue": "The Dripping Castle"
+    },
+    {
+      "image": "03.png",
+      "start": 68.568,
+      "duration": 27.72,
+      "cue": "Meeting Sprinkle"
+    },
+    {
+      "image": "04.png",
+      "start": 96.288,
+      "duration": 26.496,
+      "cue": "Inside the Castle"
+    },
+    {
+      "image": "05.png",
+      "start": 122.784,
+      "duration": 28.416,
+      "cue": "The Chocolate Rain Machine"
+    },
+    {
+      "image": "06.png",
+      "start": 151.2,
+      "duration": 30.384,
+      "cue": "Princess Poppy"
+    },
+    {
+      "image": "07.png",
+      "start": 181.584,
+      "duration": 27.576,
+      "cue": "Mia's Sticker Fix"
+    },
+    {
+      "image": "08.png",
+      "start": 209.16,
+      "duration": 39.480000000000004,
+      "cue": "The Mint-Green Hatch"
+    }
+  ]
+}

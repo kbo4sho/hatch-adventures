@@ -1,0 +1,53 @@
+{
+  "story": "story-01-dinosaur-garden",
+  "scenes": [
+    {
+      "image": "01.png",
+      "start": 0,
+      "duration": 43.752,
+      "cue": "Finding the Hatch"
+    },
+    {
+      "image": "02.png",
+      "start": 53.136,
+      "duration": 11.136,
+      "cue": "Down the Golden Tunnel"
+    },
+    {
+      "image": "03.png",
+      "start": 64.272,
+      "duration": 17.016,
+      "cue": "The Dinosaur Garden"
+    },
+    {
+      "image": "04.png",
+      "start": 81.288,
+      "duration": 31.968,
+      "cue": "Meeting the Brachiosaurus"
+    },
+    {
+      "image": "05.png",
+      "start": 113.256,
+      "duration": 19.368,
+      "cue": "The Dinosaur Picnic"
+    },
+    {
+      "image": "06.png",
+      "start": 132.624,
+      "duration": 13.08,
+      "cue": "Playing with the Dinosaurs"
+    },
+    {
+      "image": "07.png",
+      "start": 145.704,
+      "duration": 30.624,
+      "cue": "The Waterfall Goodbye"
+    },
+    {
+      "image": "08.png",
+      "start": 176.328,
+      "duration": 33.456,
+      "cue": "The Pink Tunnel Awaits"
+    }
+  ]
+}

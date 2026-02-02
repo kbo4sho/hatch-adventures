@@ -1,10 +1,10 @@
 # Hatch Hoppers — Episode 1 Narration Script
 
-Welcome, Hatch Hoppers. I’m your story guide. Max is seven, Mia is three, and today… we’re stepping into the unknown. Hands together. Deep breath. Hatch time.
+## [INTRO]
 
----
+Welcome, Hatch Hoppers. I'm your story guide. Max is seven, Mia is three, and today… we're stepping into the unknown. Hands together. Deep breath. Hatch time.
 
-## Episode 1: The Dinosaur Garden
+## [SCENE 01] — Finding the Hatch
 
 Max and Mia were playing in their backyard when Mia's stuffed bunny, Flop, rolled under the old oak tree.
 
@@ -24,9 +24,13 @@ The hatch had a handle shaped like a star. Max looked at Mia. Mia looked at Max.
 
 Max turned the star handle. Click. The hatch swung open, revealing a tunnel filled with warm golden light. Without thinking twice, they climbed inside.
 
+## [SCENE 02] — Down the Golden Tunnel
+
 Whoooooosh!
 
 The tunnel twisted and turned like a slide. Max held Mia's hand tight as they whooshed down, down, down—then pop!—they tumbled out of another hatch onto soft, squishy moss.
+
+## [SCENE 03] — The Dinosaur Garden
 
 "Wow," Max breathed.
 
@@ -35,6 +39,8 @@ They were in the biggest, greenest garden Max had ever seen. Trees as tall as bu
 And then they heard it.
 
 Thump. Thump. THUMP.
+
+## [SCENE 04] — Meeting the Brachiosaurus
 
 "Maxy, look! Big doggy!" Mia pointed.
 
@@ -50,6 +56,8 @@ The Brachiosaurus bent down and made a soft humming sound, like a giant cat purr
 
 More dinosaurs appeared—a Triceratops munching on flowers, a Stegosaurus swishing its spiky tail, and three baby dinosaurs playing tag.
 
+## [SCENE 05] — The Dinosaur Picnic
+
 "They're having a picnic!" Max said, noticing piles of berries, leaves, and giant fruits arranged on flat rocks.
 
 The Brachiosaurus gently nudged a pile of purple berries toward Max and Mia.
@@ -58,9 +66,13 @@ The Brachiosaurus gently nudged a pile of purple berries toward Max and Mia.
 
 Mia giggled as a baby dinosaur licked her hand. "Tickles!"
 
+## [SCENE 06] — Playing with the Dinosaurs
+
 For what felt like hours—time was funny in hatch places—Max and Mia played with the dinosaurs.
 
 They learned that Triceratops loved belly rubs, Stegosaurus hummed songs, and the baby dinosaurs loved playing hide-and-seek.
+
+## [SCENE 07] — The Waterfall Goodbye
 
 When the orange sky started to turn purple, the Brachiosaurus walked them to the edge of the garden.
 
@@ -78,6 +90,8 @@ She hummed happily, then gently pushed a smooth, warm stone into Max's hand. It 
 
 "A gift!" Max put it in his pocket.
 
+## [SCENE 08] — The Pink Tunnel Awaits
+
 He took Mia's hand, picked up Flop, and together they opened the waterfall hatch.
 
 Inside, the tunnel glowed a different color this time—soft pink with sparkles.
@@ -94,6 +108,6 @@ They looked at each other and laughed.
 
 And together, holding hands, they stepped into the glowing pink tunnel.
 
----
+## [OUTRO]
 
 Thanks for hopping with us. If you liked this adventure, tell a grown-up you want another. Until next time—hands together. Deep breath. Hatch time.

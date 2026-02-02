@@ -1,9 +1,42 @@
 # Episode 3: The Robot Playground — Image Prompts
 
-Save to: `assets/images/story-03-robot-playground/01.png` through `08.png`
-Resolution: **1536×1024** (landscape)
+Save to: `assets/images/story-03-robot-playground/[file].png`
+Resolution: **1792×1024** (landscape for scenes), **1024×1792** (portrait for cover)
 
-**Style prefix (applied to all prompts):** `Children's book illustration style, warm and inviting.`
+---
+
+## Style Configuration
+
+**Style prefix (applied to EVERY prompt below):**
+```
+Children's book illustration style, warm and inviting.
+```
+
+**Customization tips:**
+- Change base style: `Watercolor children's book art` or `Bold graphic novel style for kids`
+- Add artist references: `in the style of Oliver Jeffers` or `Eric Carle inspired`
+- Adjust mood: `playful and energetic` or `gentle and dreamy`
+- Every prompt below automatically starts with this prefix
+
+---
+
+## COVER.png — Thumbnail/Cover Image
+
+Resolution: **1024×1792** (portrait / 2:3 ratio)
+
+Children's book illustration style, warm and inviting. A bright futuristic playground scene with two children in the center surrounded by friendly robots of different shapes and sizes. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde pigtails, pink dress) stand on a glowing neon floor that lights up under their feet. The boy holds a stuffed white bunny. Around them: a cheerful lunchbox-shaped robot with bright green eyes, a small lonely robot being befriended, and other playful robots using swings and climbing structures. Smooth silver paths, glowing neon rails, soft rubbery tiles lighting up in blue and pink. A morning sky with floating cloud-shaped gears above. Vibrant neon colors - blues, pinks, greens, silvers - creating a bold, eye-catching composition perfect for a thumbnail. Friendly, futuristic, joyful atmosphere.
+
+**Purpose:** YouTube thumbnail, social media cover, podcast artwork
+**Aspect ratio:** 2:3 portrait (1024×1792)
+
+---
+
+## 00.png — Intro Card
+
+Children's book illustration style, warm and inviting. A title card layout with clear text areas and central illustration. At the top in large playful bold letters: "THE HATCH ADVENTURES". Below that in medium-sized text: "Episode 3: The Robot Playground". The center shows Max (7-year-old boy, brown hair, blue shirt) and Mia (3-year-old girl, blonde pigtails, pink dress) standing on a colorful glowing playground floor surrounded by friendly robots. A cheerful lunchbox-shaped robot rolls nearby. Other robots play in the background using swings and structures. Neon rails and glowing tiles create vibrant pathways. Floating cloud-shaped gears drift in the sky above. A decorative hatch symbol with circuit patterns at the bottom. The composition has clear negative space at top for title text and middle for episode text, with the futuristic robot playground scene filling the lower two-thirds. Vibrant neon colors - bright blues, pinks, greens, and silvers. Book cover quality with professional text placement. Clean, kid-friendly typography integrated into the illustration.
+
+**Purpose:** Video intro card (4 seconds)
+**Layout:** Title at top → Episode info → Central illustration → Decorative hatch symbol
 
 ---
 

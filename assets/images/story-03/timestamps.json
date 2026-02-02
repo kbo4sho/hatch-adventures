@@ -1,0 +1,53 @@
+{
+  "story": "story-03",
+  "scenes": [
+    {
+      "image": "01.png",
+      "start": 0,
+      "duration": 69.216,
+      "cue": "The Neon Playground"
+    },
+    {
+      "image": "02.png",
+      "start": 78.6,
+      "duration": 44.112,
+      "cue": "Meeting GREET-0"
+    },
+    {
+      "image": "03.png",
+      "start": 122.712,
+      "duration": 37.08,
+      "cue": "PLAY-7 Sitting Alone"
+    },
+    {
+      "image": "04.png",
+      "start": 159.792,
+      "duration": 26.376,
+      "cue": "Saying Hi to PLAY-7"
+    },
+    {
+      "image": "05.png",
+      "start": 186.168,
+      "duration": 36.696,
+      "cue": "Rolling the Hover-Ball"
+    },
+    {
+      "image": "06.png",
+      "start": 222.864,
+      "duration": 45.24,
+      "cue": "PLAY-7 Laughs"
+    },
+    {
+      "image": "07.png",
+      "start": 268.104,
+      "duration": 16.44,
+      "cue": "The Swing Set"
+    },
+    {
+      "image": "08.png",
+      "start": 284.544,
+      "duration": 60.36,
+      "cue": "The Electric-Blue Hatch"
+    }
+  ]
+}

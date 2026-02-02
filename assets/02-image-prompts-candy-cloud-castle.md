@@ -1,9 +1,42 @@
 # Episode 2: The Candy Cloud Castle — Image Prompts
 
-Save to: `assets/images/story-02-candy-cloud-castle/01.png` through `08.png`
-Resolution: **1536×1024** (landscape)
+Save to: `assets/images/story-02-candy-cloud-castle/[file].png`
+Resolution: **1536×1024** (landscape for scenes), **1024×1536** (portrait for cover)
 
-**Style prefix (applied to all prompts):** `Children's book illustration style, warm and inviting.`
+---
+
+## Style Configuration
+
+**Style prefix (applied to EVERY prompt below):**
+```
+Children's book illustration style, warm and inviting.
+```
+
+**Customization tips:**
+- Change base style: `Watercolor children's book art` or `Bold graphic novel style for kids`
+- Add artist references: `in the style of Oliver Jeffers` or `Eric Carle inspired`
+- Adjust mood: `playful and energetic` or `gentle and dreamy`
+- Every prompt below automatically starts with this prefix
+
+---
+
+## COVER.png — Thumbnail/Cover Image
+
+Resolution: **1024×1536** (portrait / 2:3 ratio)
+
+Children's book illustration style, warm and inviting. A giant sparkling castle made of sugar crystals sitting on pink and blue candy clouds, with a chocolate waterfall dripping from the highest tower. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde pigtails, pink dress) stand on a fluffy cotton-candy cloud below, looking up in wonder. The boy holds a stuffed white bunny. Around them float cotton-candy clouds in pink, blue, and buttery yellow. A small candy-striped creature (Sprinkle) hovers nearby looking worried. Sparkly bright sky with glitter drifting like stars. Vibrant candy colors creating a bold, eye-catching composition perfect for a thumbnail. Sweet, magical atmosphere.
+
+**Purpose:** YouTube thumbnail, social media cover, podcast artwork
+**Aspect ratio:** 2:3 portrait (1024×1536)
+
+---
+
+## 00.png — Intro Card
+
+Children's book illustration style, warm and inviting. A title card layout with clear text areas and central illustration. At the top in large playful bold letters: "THE HATCH ADVENTURES". Below that in medium-sized text: "Episode 2: The Candy Cloud Castle". The center shows Max (7-year-old boy, brown hair, blue shirt) and Mia (3-year-old girl, blonde pigtails, pink dress) standing on fluffy candy clouds looking up at a tall sparkling castle made of sugar crystals. A chocolate waterfall flows from the castle tower. Cotton-candy clouds float around them. A small candy-striped creature looks on. A decorative hatch symbol with candy patterns at the bottom. The composition has clear negative space at top for title text and middle for episode text, with the candy castle scene filling the lower two-thirds. Vibrant candy colors - pinks, blues, yellows, sparkling. Book cover quality with professional text placement. Clean, kid-friendly typography integrated into the illustration.
+
+**Purpose:** Video intro card (4 seconds)
+**Layout:** Title at top → Episode info → Central illustration → Decorative hatch symbol
 
 ---
 

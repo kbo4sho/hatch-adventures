@@ -20,6 +20,21 @@ This folder contains scripts to convert stories into **audio** and **video** for
 
 ---
 
+### Step 1.5: Style Intro Card (Optional but Recommended)
+**Input:** 00.png image file  
+**Output:** Styled intro card with title overlay
+
+**What it does:**
+- Adds "THE HATCH ADVENTURES" header (2 lines)
+- Adds episode title: "Episode N: [Title]"
+- Applies shadow effect for depth
+- Maintains professional styling across all episodes
+
+**Script:** `prepare-intro-cards.sh`  
+**Guide:** See `INTRO-CARD-WORKFLOW.md`
+
+---
+
 ### Step 2: Create Video (Images + Audio)
 **Input:** Images folder + audio file  
 **Output:** MP4 video
@@ -29,6 +44,7 @@ This folder contains scripts to convert stories into **audio** and **video** for
 - Times them to audio narration
 - Adds fade transitions
 - Exports platform-specific versions
+- Uses styled intro card (00.png) automatically
 
 **Script:** `create-video.js`
 
@@ -78,7 +94,14 @@ npm install
 # Creates: output/story-01-audio.mp3
 ```
 
-### 3. Create Videos
+### 3. Prepare Intro Card (Style with Titles)
+```bash
+# Save generated 00.png first: assets/images/story-01-dinosaur-garden/00.png
+./prepare-intro-cards.sh story-01 "The Dinosaur Garden"
+# Adds title overlay to 00.png
+```
+
+### 4. Create Videos
 ```bash
 node create-video.js story-01
 # Creates:
@@ -88,7 +111,7 @@ node create-video.js story-01
 #   output/story-01-instagram-feed.mp4
 ```
 
-### 4. Upload
+### 5. Upload
 Follow platform-specific guides in `upload-*.md` files.
 
 ---
@@ -98,8 +121,11 @@ Follow platform-specific guides in `upload-*.md` files.
 ```
 automation/
 ├── README.md                    # This file
+├── INTRO-CARD-WORKFLOW.md       # Intro card styling guide
 ├── generate-audio.sh            # Audio generation script
 ├── create-video.js              # Video stitching script
+├── add-intro-title.py           # Title overlay tool
+├── prepare-intro-cards.sh       # Intro card styling script
 ├── export-platforms.sh          # Multi-platform export
 ├── upload-youtube.js            # YouTube API uploader
 ├── upload-spotify.md            # Spotify/podcast guide
