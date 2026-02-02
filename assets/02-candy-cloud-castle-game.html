@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Cloud Catcher! - The Hatch Adventures</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Comic Sans MS', 'Chalkboard SE', 'Arial Rounded MT Bold', cursive, sans-serif;
+            background: linear-gradient(180deg, #87CEEB 0%, #FFB6C1 50%, #DDA0DD 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            user-select: none;
+            -webkit-user-select: none;
+            overflow: hidden;
+        }
+        
+        .game-container {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            padding: 30px;
+            max-width: 800px;
+            width: 100%;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        h1 {
+            color: #FF69B4;
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .stat {
+            background: linear-gradient(135deg, #FFB6C1 0%, #FF69B4 100%);
+            padding: 15px 25px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            flex: 1;
+            min-width: 120px;
+        }
+        
+        .stat-value {
+            font-size: 2em;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+        
+        .game-area {
+            position: relative;
+            height: 400px;
+            background: linear-gradient(180deg, #E0F6FF 0%, #FFE4F0 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 4px solid #FFB6C1;
+            margin-bottom: 20px;
+        }
+        
+        .basket {
+            position: absolute;
+            bottom: 20px;
+            width: 100px;
+            height: 80px;
+            background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+            border-radius: 10px 10px 50% 50%;
+            border: 4px solid #654321;
+            transition: left 0.1s;
+            z-index: 10;
+        }
+        
+        .basket::before {
+            content: '🧺';
+            position: absolute;
+            font-size: 3em;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .candy {
+            position: absolute;
+            font-size: 2.5em;
+            transition: top 0.05s linear;
+            cursor: pointer;
+            animation: float 2s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-10px) rotate(5deg); }
+        }
+        
+        .friend {
+            position: absolute;
+            bottom: 20px;
+            font-size: 3em;
+            animation: bounce 1s ease-in-out infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .friend-1 {
+            left: 20px;
+        }
+        
+        .friend-2 {
+            right: 20px;
+        }
+        
+        .message {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            text-align: center;
+            display: none;
+            z-index: 100;
+        }
+        
+        .message.show {
+            display: block;
+            animation: popIn 0.3s ease-out;
+        }
+        
+        @keyframes popIn {
+            0% { transform: translate(-50%, -50%) scale(0.5); }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+        
+        .message h2 {
+            color: #FF69B4;
+            margin-bottom: 15px;
+            font-size: 2em;
+        }
+        
+        .message p {
+            color: #666;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        
+        .controls {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: linear-gradient(135deg, #FF69B4 0%, #FF1493 100%);
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-family: inherit;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(255, 105, 180, 0.6);
+        }
+        
+        .btn:active {
+            transform: translateY(0);
+        }
+        
+        .btn-share {
+            background: linear-gradient(135deg, #9370DB 0%, #8A2BE2 100%);
+            box-shadow: 0 5px 15px rgba(147, 112, 219, 0.4);
+        }
+        
+        .btn-share:hover {
+            box-shadow: 0 8px 20px rgba(147, 112, 219, 0.6);
+        }
+        
+        .btn-share:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        
+        .instructions {
+            background: #FFF8DC;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 3px dashed #FFB6C1;
+        }
+        
+        .instructions h3 {
+            color: #FF69B4;
+            margin-bottom: 10px;
+        }
+        
+        .instructions ul {
+            margin-left: 20px;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .warning {
+            background: #FFE4E1;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 2px solid #FF6347;
+            color: #8B0000;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        
+        .warning.show {
+            display: block;
+            animation: shake 0.5s;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .game-area { height: 300px; }
+            .basket { width: 80px; height: 60px; }
+            .basket::before { font-size: 2em; }
+            .candy { font-size: 2em; }
+            .friend { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🍬 Candy Cloud Catcher! ☁️</h1>
+        <p class="subtitle">Episode 2: The Candy Cloud Castle</p>
+        
+        <div class="instructions" id="instructions">
+            <h3>📖 How to Play:</h3>
+            <ul>
+                <li>🍭 Move your basket (← →) to catch falling candy clouds!</li>
+                <li>🤝 Click "Share!" to give candy to your friends</li>
+                <li>⚠️ Don't be greedy! Too much candy makes you slow</li>
+                <li>🎯 Share with both friends to win!</li>
+                <li>💫 Some candy is fun, but sharing is better!</li>
+            </ul>
+        </div>
+        
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-value" id="candyCount">0</span>
+                <span class="stat-label">🍬 Candy</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="sharedCount">0</span>
+                <span class="stat-label">🤝 Shared</span>
+            </div>
+            <div class="stat">
+                <span class="stat-value" id="level">1</span>
+                <span class="stat-label">⭐ Level</span>
+            </div>
+        </div>
+        
+        <div class="warning" id="warning">
+            ⚠️ Too much candy! You're getting slower! Share some! ⚠️
+        </div>
+        
+        <div class="game-area" id="gameArea">
+            <div class="basket" id="basket"></div>
+            <div class="friend friend-1" id="friend1" title="Max">👦</div>
+            <div class="friend friend-2" id="friend2" title="Mia">👧</div>
+        </div>
+        
+        <div class="controls">
+            <button class="btn" id="startBtn">🎮 Start Game!</button>
+            <button class="btn btn-share" id="shareBtn" disabled>🤝 Share! (Need 5+ candy)</button>
+        </div>
+        
+        <div class="message" id="message">
+            <h2 id="messageTitle">Great Job!</h2>
+            <p id="messageText">You learned about sharing!</p>
+            <button class="btn" id="playAgainBtn">🎮 Play Again!</button>
+        </div>
+    </div>
+
+    <script>
+        const gameArea = document.getElementById('gameArea');
+        const basket = document.getElementById('basket');
+        const startBtn = document.getElementById('startBtn');
+        const shareBtn = document.getElementById('shareBtn');
+        const playAgainBtn = document.getElementById('playAgainBtn');
+        const message = document.getElementById('message');
+        const messageTitle = document.getElementById('messageTitle');
+        const messageText = document.getElementById('messageText');
+        const candyCountEl = document.getElementById('candyCount');
+        const sharedCountEl = document.getElementById('sharedCount');
+        const levelEl = document.getElementById('level');
+        const warning = document.getElementById('warning');
+        const instructions = document.getElementById('instructions');
+        const friend1 = document.getElementById('friend1');
+        const friend2 = document.getElementById('friend2');
+        
+        let basketPosition = 50; // percentage
+        let candyCount = 0;
+        let sharedCount = 0;
+        let level = 1;
+        let gameActive = false;
+        let candies = [];
+        let gameLoop;
+        let spawnInterval;
+        let speed = 2;
+        let maxSpeed = 5;
+        let friend1Fed = false;
+        let friend2Fed = false;
+        
+        const candyEmojis = ['🍬', '🍭', '🍫', '🍰', '🧁', '🍩', '🍪', '🎂'];
+        
+        function updateBasketPosition() {
+            basket.style.left = `${basketPosition}%`;
+        }
+        
+        function moveBasket(direction) {
+            if (!gameActive) return;
+            
+            // Calculate movement speed based on candy count (greedy = slower)
+            let moveSpeed = 3;
+            if (candyCount > 10) {
+                moveSpeed = 1; // Very slow when greedy!
+                warning.classList.add('show');
+            } else if (candyCount > 5) {
+                moveSpeed = 2; // Slower
+                warning.classList.add('show');
+            } else {
+                warning.classList.remove('show');
+            }
+            
+            if (direction === 'left') {
+                basketPosition = Math.max(0, basketPosition - moveSpeed);
+            } else if (direction === 'right') {
+                basketPosition = Math.min(87, basketPosition + moveSpeed);
+            }
+            updateBasketPosition();
+        }
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') moveBasket('left');
+            if (e.key === 'ArrowRight') moveBasket('right');
+        });
+        
+        // Touch controls for mobile
+        let touchStartX = 0;
+        gameArea.addEventListener('touchstart', (e) => {
+            touchStartX = e.touches[0].clientX;
+        });
+        
+        gameArea.addEventListener('touchmove', (e) => {
+            if (!gameActive) return;
+            e.preventDefault();
+            const touchX = e.touches[0].clientX;
+            const gameRect = gameArea.getBoundingClientRect();
+            const relativeX = ((touchX - gameRect.left) / gameRect.width) * 100;
+            basketPosition = Math.max(0, Math.min(87, relativeX - 6));
+            updateBasketPosition();
+        });
+        
+        function spawnCandy() {
+            if (!gameActive) return;
+            
+            const candy = document.createElement('div');
+            candy.className = 'candy';
+            candy.textContent = candyEmojis[Math.floor(Math.random() * candyEmojis.length)];
+            candy.style.left = `${Math.random() * 90}%`;
+            candy.style.top = '0px';
+            candy.dataset.top = 0;
+            
+            gameArea.appendChild(candy);
+            candies.push(candy);
+        }
+        
+        function checkCollision(candy) {
+            const candyRect = candy.getBoundingClientRect();
+            const basketRect = basket.getBoundingClientRect();
+            
+            return !(candyRect.right < basketRect.left || 
+                     candyRect.left > basketRect.right || 
+                     candyRect.bottom < basketRect.top || 
+                     candyRect.top > basketRect.bottom);
+        }
+        
+        function updateGame() {
+            if (!gameActive) return;
+            
+            candies.forEach((candy, index) => {
+                let top = parseFloat(candy.dataset.top);
+                top += speed;
+                candy.dataset.top = top;
+                candy.style.top = `${top}px`;
+                
+                if (checkCollision(candy)) {
+                    candyCount++;
+                    candyCountEl.textContent = candyCount;
+                    candy.remove();
+                    candies.splice(index, 1);
+                    
+                    // Play catch sound effect (visual feedback)
+                    candy.style.transform = 'scale(1.5)';
+                    
+                    // Update share button
+                    if (candyCount >= 5) {
+                        shareBtn.disabled = false;
+                    }
+                    
+                    // Level up
+                    if (candyCount % 10 === 0) {
+                        level++;
+                        levelEl.textContent = level;
+                        speed = Math.min(maxSpeed, speed + 0.5);
+                    }
+                } else if (top > gameArea.offsetHeight) {
+                    candy.remove();
+                    candies.splice(index, 1);
+                }
+            });
+        }
+        
+        function shareCandy() {
+            if (candyCount < 5) return;
+            
+            // Share with friends alternating
+            if (!friend1Fed) {
+                friend1.style.animation = 'none';
+                setTimeout(() => {
+                    friend1.textContent = '😊';
+                    friend1.style.animation = 'bounce 1s ease-in-out infinite';
+                }, 10);
+                friend1Fed = true;
+            } else if (!friend2Fed) {
+                friend2.style.animation = 'none';
+                setTimeout(() => {
+                    friend2.textContent = '😄';
+                    friend2.style.animation = 'bounce 1s ease-in-out infinite';
+                }, 10);
+                friend2Fed = true;
+            }
+            
+            candyCount -= 5;
+            sharedCount += 5;
+            candyCountEl.textContent = candyCount;
+            sharedCountEl.textContent = sharedCount;
+            
+            if (candyCount < 5) {
+                shareBtn.disabled = true;
+            }
+            
+            // Check win condition
+            if (friend1Fed && friend2Fed) {
+                endGame(true);
+            }
+        }
+        
+        function startGame() {
+            gameActive = true;
+            candyCount = 0;
+            sharedCount = 0;
+            level = 1;
+            speed = 2;
+            friend1Fed = false;
+            friend2Fed = false;
+            candies = [];
+            
+            // Reset friends
+            friend1.textContent = '👦';
+            friend2.textContent = '👧';
+            
+            // Clear existing candies
+            document.querySelectorAll('.candy').forEach(c => c.remove());
+            
+            candyCountEl.textContent = '0';
+            sharedCountEl.textContent = '0';
+            levelEl.textContent = '1';
+            
+            startBtn.disabled = true;
+            shareBtn.disabled = true;
+            instructions.style.display = 'none';
+            warning.classList.remove('show');
+            
+            gameLoop = setInterval(updateGame, 50);
+            spawnInterval = setInterval(spawnCandy, 1500);
+        }
+        
+        function endGame(won) {
+            gameActive = false;
+            clearInterval(gameLoop);
+            clearInterval(spawnInterval);
+            
+            startBtn.disabled = false;
+            
+            if (won) {
+                messageTitle.textContent = '🎉 Amazing! 🎉';
+                messageText.textContent = `You shared ${sharedCount} pieces of candy with your friends! Remember: some candy is fun, but sharing makes everyone happy! 🤝✨`;
+            } else {
+                messageTitle.textContent = '💝 Great Try!';
+                messageText.textContent = `You collected ${candyCount} candies! Try sharing with both friends next time! 🍬`;
+            }
+            
+            message.classList.add('show');
+        }
+        
+        startBtn.addEventListener('click', () => {
+            message.classList.remove('show');
+            startGame();
+        });
+        
+        shareBtn.addEventListener('click', shareCandy);
+        
+        playAgainBtn.addEventListener('click', () => {
+            message.classList.remove('show');
+            instructions.style.display = 'block';
+            startGame();
+        });
+        
+        // Initialize
+        updateBasketPosition();
+    </script>
+</body>
+</html>
