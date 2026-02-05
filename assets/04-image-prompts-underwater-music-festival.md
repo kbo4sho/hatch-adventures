@@ -11,7 +11,7 @@ Resolution: **1536×1024** (landscape for scenes), **1024×1536** (portrait for 
 
 Resolution: **1024×1536** (portrait / 2:3 ratio)
 
-Children's book illustration style, warm and inviting. Two children swimming underwater surrounded by magical sea creatures making music together. A 7-year-old boy (brown hair, blue shirt) conducting rhythm with his hands creating visible ripples, and his 3-year-old sister (blonde pigtails, pink dress flowing in the water) dancing joyfully. Around them: dolphins playing drum-shells, seahorses singing, colorful fish chiming, all creating glowing musical notes that swirl through the water. A wise sea turtle in a conductor's hat watches approvingly. Vibrant coral city towers glow in the background. The boy holds a stuffed white bunny that floats beside him. Bold, eye-catching composition perfect for a thumbnail. Magical underwater concert atmosphere with bioluminescent blues, purples, and coral pinks. Safe, joyful, celebration energy.
+Children's book illustration style, warm and inviting. Two children swimming underwater surrounded by magical sea creatures making music together. A 7-year-old boy (brown hair, blue shirt) conducting rhythm with his hands creating visible ripples, and his 3-year-old sister (blonde hair (loose), pink dress flowing in the water) dancing joyfully. Around them: dolphins playing drum-shells, seahorses singing, colorful fish chiming, all creating glowing musical notes that swirl through the water. A wise sea turtle in a conductor's hat watches approvingly. Vibrant coral city towers glow in the background. The boy holds a stuffed white bunny that floats beside him. Bold, eye-catching composition perfect for a thumbnail. Magical underwater concert atmosphere with bioluminescent blues, purples, and coral pinks. Safe, joyful, celebration energy.
 
 **Purpose:** YouTube thumbnail, social media cover, podcast artwork
 **Aspect ratio:** 2:3 portrait (1024×1536)
@@ -20,7 +20,7 @@ Children's book illustration style, warm and inviting. Two children swimming und
 
 ## 00.png — Intro Card
 
-Children's book illustration style, warm and inviting. A title card layout with clear text areas and central illustration. At the top in large playful bold letters: "THE HATCH ADVENTURES". Below that in medium-sized text: "Episode 4: The Underwater Music Festival". The center shows Max (7-year-old boy, brown hair, blue shirt) and Mia (3-year-old girl, blonde pigtails, pink dress) floating underwater surrounded by musical sea creatures - a wise sea turtle conductor, dolphins playing drums, seahorses singing, colorful fish. Glowing musical notes swirl through the water. Vibrant coral city towers in the background. A decorative hatch symbol with wave patterns at the bottom. The composition has clear negative space at top for title text and middle for episode text, with the underwater scene filling the lower two-thirds. Ocean blues, coral pinks, bioluminescent greens. Book cover quality with professional text placement. Clean, kid-friendly typography integrated into the illustration.
+Children's book illustration style, warm and inviting. A title card layout with clear text areas and central illustration. At the top in large playful bold letters: "THE HATCH ADVENTURES". Below that in medium-sized text: "Episode 4: The Underwater Music Festival". The center shows Max (7-year-old boy, brown hair, blue shirt) and Mia (3-year-old girl, blonde hair (loose), pink dress) floating underwater surrounded by musical sea creatures - a wise sea turtle conductor, dolphins playing drums, seahorses singing, colorful fish. Glowing musical notes swirl through the water. Vibrant coral city towers in the background. A decorative hatch symbol with wave patterns at the bottom. The composition has clear negative space at top for title text and middle for episode text, with the underwater scene filling the lower two-thirds. Ocean blues, coral pinks, bioluminescent greens. Book cover quality with professional text placement. Clean, kid-friendly typography integrated into the illustration.
 
 **Purpose:** Video intro card (4 seconds)
 **Layout:** Title at top → Episode info → Central illustration → Decorative hatch symbol
@@ -29,7 +29,7 @@ Children's book illustration style, warm and inviting. A title card layout with 
 
 ## 01.png — Floating Underwater
 
-Children's book illustration style, warm and inviting. Two children floating underwater in a magical ocean. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde pigtails, pink dress) look amazed as they realize they can breathe underwater. They're surrounded by tiny silver fish swimming in formation. Above them, the ocean surface shimmers with blue-green light. Below, a glowing coral city made of pink, purple, and orange towers. The boy holds a stuffed white bunny. Both children are floating peacefully, hair and clothes gently flowing. Magical, safe underwater atmosphere.
+Children's book illustration style, warm and inviting. Two children floating underwater in a magical ocean. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde hair (loose), pink dress) look amazed as they realize they can breathe underwater. They're surrounded by tiny silver fish swimming in formation. Above them, the ocean surface shimmers with blue-green light. Below, a glowing coral city made of pink, purple, and orange towers. The boy holds a stuffed white bunny. Both children are floating peacefully, hair and clothes gently flowing. Magical, safe underwater atmosphere.
 
 ---
 
@@ -59,7 +59,7 @@ Children's book illustration style, warm and inviting. A boy (brown hair, blue s
 
 ## 06.png — The Music Comes Together
 
-Children's book illustration style, warm and inviting. All three groups playing together in harmony: dolphins drumming in rhythm, seahorses singing beautifully, and fish chiming at the perfect moments. Musical notes float in organized patterns through the water forming a visual melody. The little girl (blonde pigtails, pink dress) spins and dances underwater, her dress and hair flowing gracefully. Her stuffed bunny floats beside her. An octopus and crab clap along in the background. Shelly the sea turtle conductor smiles with joy. Perfect harmony, celebration, magical underwater concert.
+Children's book illustration style, warm and inviting. All three groups playing together in harmony: dolphins drumming in rhythm, seahorses singing beautifully, and fish chiming at the perfect moments. Musical notes float in organized patterns through the water forming a visual melody. The little girl (blonde hair (loose), pink dress) spins and dances underwater, her dress and hair flowing gracefully. Her stuffed bunny floats beside her. An octopus and crab clap along in the background. Shelly the sea turtle conductor smiles with joy. Perfect harmony, celebration, magical underwater concert.
 
 ---
 
@@ -77,8 +77,8 @@ Children's book illustration style, warm and inviting. At the edge of the underw
 
 ## Character Reference
 
-- **Max:** 7 years old, brown hair, blue t-shirt, khaki shorts, curious and brave
-- **Mia:** 3 years old, blonde pigtails, pink dress, joyful and fearless
+- **Max:** 7 years old, shaggy brown hair, blue t-shirt, khaki pants, curious and brave
+- **Mia:** 3 years old, blonde hair (loose, NOT pigtails), pink dress, joyful and fearless
 - **Flop:** Small white stuffed bunny, floppy ears
 - **Shelly:** Old wise sea turtle, conductor's hat, kind eyes, name tag
 - **Sea creatures:** Friendly, expressive, musical — dolphins, seahorses, fish, octopus, crab, jellyfish, whale

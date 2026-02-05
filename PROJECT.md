@@ -8,12 +8,16 @@ This project uses reusable skills from `~/clawd/skills/`.
 ```bash
 # From hatch-stories/automation directory:
 
-# 1. Generate TTS audio from narration script
-node ~/clawd/skills/openai-tts-producer/generate-audio.js \
+# 1. Generate TTS audio (defaults to FREE Apple TTS)
+node generate-audio.js \
   story-02-candy-cloud-castle-narration.md \
-  --voice nova \
   --output ./output \
   --timestamps-dir ../assets/images/story-02-candy-cloud-castle
+
+# Options:
+#   --engine apple    Free macOS TTS (default)
+#   --engine openai   Paid OpenAI TTS (~$0.05/story, better quality)
+#   --voice <name>    Apple: Samantha, Daniel, Karen | OpenAI: nova, alloy
 
 # 2. Create video from images + audio
 node ~/clawd/skills/video-assembler/create-video.js \
@@ -45,8 +49,17 @@ python automation/generate-images-dalle.py story-NN-title
 
 ### 4. Generate Audio
 ```bash
-node ~/clawd/skills/openai-tts-producer/generate-audio.js \
+# Default: FREE Apple TTS
+node automation/generate-audio.js \
   automation/story-NN-title-narration.md \
+  --output automation/output \
+  --timestamps-dir assets/images/story-NN-title
+
+# Optional: OpenAI TTS (better quality, ~$0.05/story)
+node automation/generate-audio.js \
+  automation/story-NN-title-narration.md \
+  --engine openai \
+  --voice nova \
   --output automation/output \
   --timestamps-dir assets/images/story-NN-title
 ```

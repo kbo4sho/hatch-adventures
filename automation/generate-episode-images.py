@@ -73,7 +73,25 @@ EPISODES = {
     3: {
         'title': 'The Robot Playground',
         'slug': 'robot-playground',
-        'next': 'Underwater Music Festival',
+        'next': 'The Underwater Music Festival',
+        'theme': 'robot'
+    },
+    4: {
+        'title': 'The Underwater Music Festival',
+        'slug': 'underwater-music-festival',
+        'next': 'The Whispering Woods',
+        'theme': 'mint'
+    },
+    5: {
+        'title': 'The Whispering Woods',
+        'slug': 'whispering-woods',
+        'next': 'The Starlight Carnival',
+        'theme': 'dino'
+    },
+    6: {
+        'title': 'The Starlight Carnival',
+        'slug': 'starlight-carnival',
+        'next': 'Episode 7',
         'theme': 'robot'
     }
 }

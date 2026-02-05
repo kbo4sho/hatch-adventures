@@ -53,15 +53,15 @@ Digital illustration emulating traditional watercolor on cold-pressed paper. War
 - Large round heads, simplified anatomy
 
 **Max (7-year-old boy):**
-- Brown hair with warm highlights, soft mass with strand suggestions
-- Cobalt blue t-shirt (#3A5FA0), khaki shorts, blue shoes
+- Shaggy brown hair with warm highlights, soft tousled mass
+- Cobalt blue t-shirt (#3A5FA0), khaki pants, blue shoes
 - Rosy pink cheek spots
 - Large round dot eyes (black with white highlight)
 - Small crescent mouth for expressions
 - Simplified mitten-like hands with gesture emphasis
 
 **Mia (3-year-old girl):**
-- Blonde hair in pigtails with pink bows
+- Blonde hair, loose and flowing (NOT pigtails)
 - Coral-pink dress (#E06070), red shoes
 - Rosy pink cheek spots
 - Slightly smaller than Max, more toddler proportions
@@ -148,7 +148,7 @@ Before approving any generated image, verify:
 - [ ] Paper grain texture visible throughout (even in highlights)
 - [ ] Line work is warm sepia, not pure black
 - [ ] Characters maintain 3-4 head proportions
-- [ ] Max in blue t-shirt, Mia in pink dress (consistent costumes)
+- [ ] Max in blue t-shirt (shaggy brown hair), Mia in pink dress (loose blonde hair)
 - [ ] Rosy cheek spots present on all characters
 - [ ] Sky has warm orange-amber tones
 - [ ] Colors are saturated but not garish

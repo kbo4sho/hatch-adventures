@@ -1,0 +1,54 @@
+{
+  "story": "story-04-underwater-music-festival",
+  "totalDuration": 296.610249,
+  "scenes": [
+    {
+      "image": "01.png",
+      "start": 0,
+      "duration": 41.435,
+      "cue": "Floating Underwater"
+    },
+    {
+      "image": "02.png",
+      "start": 52.118,
+      "duration": 26.806,
+      "cue": "The Coral City"
+    },
+    {
+      "image": "03.png",
+      "start": 78.924,
+      "duration": 24.563,
+      "cue": "Meeting Shelly"
+    },
+    {
+      "image": "04.png",
+      "start": 103.487,
+      "duration": 39.645,
+      "cue": "The Jumbled Rehearsal"
+    },
+    {
+      "image": "05.png",
+      "start": 143.132,
+      "duration": 33.465,
+      "cue": "Teaching Rhythm"
+    },
+    {
+      "image": "06.png",
+      "start": 176.597,
+      "duration": 24.353,
+      "cue": "The Music Comes Together"
+    },
+    {
+      "image": "07.png",
+      "start": 200.95,
+      "duration": 42.783,
+      "cue": "The Festival Begins"
+    },
+    {
+      "image": "08.png",
+      "start": 243.733,
+      "duration": 52.267943,
+      "cue": "The Green Glowing Hatch"
+    }
+  ]
+}

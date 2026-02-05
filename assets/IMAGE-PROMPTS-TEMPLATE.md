@@ -28,7 +28,7 @@ Children's book illustration style, warm and inviting.
 
 Resolution: **1024×1536** (portrait / 2:3 ratio)
 
-Children's book illustration style, warm and inviting. [Main visual hook of the story - Max and Mia with the key setting element]. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde pigtails, pink dress) [doing the central action or in the iconic location]. The boy holds a stuffed white bunny. [Key visual elements that make this story unique]. Bright, magical, safe atmosphere. Perfect for a story thumbnail - bold composition, engaging focal point, kid-friendly colors.
+Children's book illustration style, warm and inviting. [Main visual hook of the story - Max and Mia with the key setting element]. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde hair (loose), pink dress) [doing the central action or in the iconic location]. The boy holds a stuffed white bunny. [Key visual elements that make this story unique]. Bright, magical, safe atmosphere. Perfect for a story thumbnail - bold composition, engaging focal point, kid-friendly colors.
 
 **Purpose:** YouTube thumbnail, social media cover, podcast artwork
 **Aspect ratio:** 2:3 portrait (1024×1536)
@@ -40,7 +40,7 @@ Children's book illustration style, warm and inviting. [Main visual hook of the 
 
 **Resolution: 1536×1024 (landscape, MUST match all other scenes)**
 
-Children's book illustration style, warm and inviting. A dramatic, iconic moment from the episode: [describe the most memorable scene - include Max (7-year-old boy, brown hair, blue shirt) and Mia (3-year-old girl, blonde pigtails, pink dress) in the key setting]. The boy holds a stuffed white bunny. [Environmental details, key characters/elements that define this episode]. Warm golden lighting, rich saturated colors. Safe, magical, awe-inspiring atmosphere. Bold, memorable composition suitable for an opening sequence. **NO TEXT** - illustration only (text overlay will be added separately via prepare-intro-cards.sh).
+Children's book illustration style, warm and inviting. A dramatic, iconic moment from the episode: [describe the most memorable scene - include Max (7-year-old boy, brown hair, blue shirt) and Mia (3-year-old girl, blonde hair (loose), pink dress) in the key setting]. The boy holds a stuffed white bunny. [Environmental details, key characters/elements that define this episode]. Warm golden lighting, rich saturated colors. Safe, magical, awe-inspiring atmosphere. Bold, memorable composition suitable for an opening sequence. **NO TEXT** - illustration only (text overlay will be added separately via prepare-intro-cards.sh).
 
 **Purpose:** Video intro card (4 seconds, will have title overlay added)
 **Size requirement:** MUST be 1536×1024 landscape
@@ -50,7 +50,7 @@ Children's book illustration style, warm and inviting. A dramatic, iconic moment
 
 ## 01.png — [Scene Name]
 
-Children's book illustration style, warm and inviting. [Describe the first story scene in detail - setting, characters, mood, action]. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde pigtails, pink dress) [what they're doing]. The boy holds a stuffed white bunny. [Environmental details, lighting, atmosphere]. [Emotional tone]. Magical, safe atmosphere.
+Children's book illustration style, warm and inviting. [Describe the first story scene in detail - setting, characters, mood, action]. A 7-year-old boy (brown hair, blue shirt) and his 3-year-old sister (blonde hair (loose), pink dress) [what they're doing]. The boy holds a stuffed white bunny. [Environmental details, lighting, atmosphere]. [Emotional tone]. Magical, safe atmosphere.
 
 ---
 
@@ -92,7 +92,7 @@ Children's book illustration style, warm and inviting. [Seventh scene descriptio
 
 ## 08.png — [Scene Name / Outro]
 
-Children's book illustration style, warm and inviting. [Final scene - usually finding the next hatch]. [Description of the new hatch and where it leads]. The boy (brown hair, blue shirt) and little girl (blonde pigtails, pink dress) [their action - usually entering or discovering]. Sense of completion mixed with anticipation for the next adventure. [Goodbye elements if any]. Warm, magical, hopeful atmosphere.
+Children's book illustration style, warm and inviting. [Final scene - usually finding the next hatch]. [Description of the new hatch and where it leads]. The boy (brown hair, blue shirt) and little girl (blonde hair (loose), pink dress) [their action - usually entering or discovering]. Sense of completion mixed with anticipation for the next adventure. [Goodbye elements if any]. Warm, magical, hopeful atmosphere.
 
 **Purpose:** Video outro (4 seconds)
 **Shows:** Transition to next adventure
@@ -101,8 +101,8 @@ Children's book illustration style, warm and inviting. [Final scene - usually fi
 
 ## Character Reference
 
-- **Max:** 7 years old, brown hair, blue t-shirt, khaki shorts, curious and brave
-- **Mia:** 3 years old, blonde pigtails, pink dress, joyful and fearless  
+- **Max:** 7 years old, brown hair, blue t-shirt, khaki pants, curious and brave
+- **Mia:** 3 years old, blonde hair (loose), pink dress, joyful and fearless  
 - **Flop:** Small white stuffed bunny, floppy ears
 - **[Other characters specific to this story]**
 

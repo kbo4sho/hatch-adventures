@@ -7,16 +7,18 @@ Two siblings—**Max** (7) and **Mia** (3)—discover magical hatches that trans
 ## Main Characters
 
 ### Max (7 years old, boy)
+- Shaggy brown hair
 - Curious, brave, loves asking "why?"
 - Reads a lot, knows random facts
 - Protective big brother
-- Wears: blue hoodie, sneakers with lights
+- Wears: blue t-shirt, khaki pants
 
 ### Mia (3 years old, girl)
-- Blonde hair in pigtails
+- Blonde hair (loose, not pigtails)
 - Imaginative, fearless, giggly
 - Loves animals, colors, and singing
 - Calls Max "Maxy"
+- Wears: pink dress
 - Carries: stuffed bunny named "Flop"
 
 ## Story Structure (Template)
